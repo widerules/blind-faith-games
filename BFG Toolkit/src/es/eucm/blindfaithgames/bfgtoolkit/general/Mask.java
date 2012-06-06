@@ -1,0 +1,172 @@
+/*******************************************************************************
+ * Blind Faith Games is a research project of the e-UCM
+ *           research group, developed by Gloria Pozuelo and Javier Álvarez, 
+ *           under supervision by Baltasar Fernández-Manjón and Javier Torrente.
+ *    
+ *     Copyright 2011-2012 e-UCM research group.
+ *   
+ *      e-UCM is a research group of the Department of Software Engineering
+ *           and Artificial Intelligence at the Complutense University of Madrid
+ *           (School of Computer Science).
+ *   
+ *           C Profesor Jose Garcia Santesmases sn,
+ *           28040 Madrid (Madrid), Spain.
+ *   
+ *           For more info please visit:  <http://blind-faith-games.e-ucm.es> or
+ *           <http://www.e-ucm.es>
+ *   
+ *   ****************************************************************************
+ * 	  This file is part of BFG TOOLKIT, developed in the Blind Faith Games project.
+ *  
+ *       BFG TOOLKIT, is free software: you can redistribute it and/or modify
+ *       it under the terms of the GNU Lesser General Public License as published by
+ *       the Free Software Foundation, either version 3 of the License, or
+ *       (at your option) any later version.
+ *   
+ *       BFG TOOLKIT is distributed in the hope that it will be useful,
+ *       but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *       MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *       GNU Lesser General Public License for more details.
+ *   
+ *       You should have received a copy of the GNU Lesser General Public License
+ *       along with Adventure.  If not, see <http://www.gnu.org/licenses/>.
+ ******************************************************************************/
+package es.eucm.blindfaithgames.bfgtoolkit.general;
+
+import android.graphics.Canvas;
+import android.os.Bundle;
+
+/**
+ * Abstract class that provides methods to implement mask with different shapes. 
+ * 
+ * @author Javier Álvarez & Gloria Pozuelo. 
+ * 
+ * */
+
+public abstract class Mask {
+	
+	protected int offsetX,offsetY; // Offset between entity coordinates and mask coordinates
+	protected int x,y; // Mask coordinates
+	
+	/**
+	 * Unique constructor of the class.
+	 * 
+	 * @param offsetX Offset within x relative to the entity coordinates.
+	 * @param offsetY Offset within y relative to the entity coordinates.
+	 * 
+	 * */
+	public Mask(int offsetX, int offsetY){
+		this.offsetX = offsetX;
+		this.offsetY = offsetY;
+	}
+	
+// ----------------------------------------------------------- Getters -----------------------------------------------------------    
+	public int getOffsetX() {
+		return offsetX;
+	}
+
+	public int getOffsetY() {
+		return offsetY;
+	}
+
+	public int getX() {
+		return x;
+	}
+
+	public int getY() {
+		return y;
+	}
+	
+// ----------------------------------------------------------- Others -----------------------------------------------------------    
+	/**
+	 * Checks if x and y are on the concrete mask area.
+	 * 
+	 * @param x the coordinate on the x axis.
+	 * @param y the coordinate on the y axis.
+	 * @return The result of the test.
+	 * */
+	public abstract boolean isInMask(int x, int y);
+	
+	/**
+	 * To debug. It have to draw a mask skeleton.
+	 * 
+	 * @param canvas The surface that will be painted.
+	 * 
+	 * */
+	public abstract void onDraw(Canvas canvas);
+	
+	/**
+	 * Method that test if this and m collides calling isInMask method.
+	 * @param m the mask to be tested with this.
+	 * @return The result of the collision test.
+	 * */
+	public boolean collide(Mask m){
+		
+		if(m instanceof MaskCircle){
+			MaskCircle circle = (MaskCircle) m;
+			int cx = circle.getCenterX();
+			int cy = circle.getCenterY();
+			int r = circle.getRadius();
+			int inc = 1; 
+			int auxX,auxY;
+			boolean found = false;
+			double ang = 0;
+			while(ang < 360 && !found){
+					auxX = (int) (cx + r * Math.cos(ang));
+					auxY = (int) (cy + r * Math.sin(ang));
+					found = this.isInMask(auxX,auxY);
+					ang=ang+inc;
+			}	
+			return found;
+		}
+		else
+			if(m instanceof MaskBox){
+				MaskBox box = (MaskBox) m;
+				int auxX = box.getX();
+				int x = box.getX();
+				int y = box.getY();
+				int auxY;
+				boolean found = false;
+				while(auxX < x + box.getWidth() && !found){
+					auxY = box.getY(); 
+					while(auxY < y + box.getHeight() && !found){
+						found = this.isInMask(auxX,auxY);
+						auxY++;
+					}
+					auxX++;
+				}
+				return found;
+			}
+		return false;
+	}
+	
+	/**
+	 * Updates the mask coordinates from the entity coordinates.
+	 * @param x the coordinate on the x of the entity associated to this mask.
+	 * @param y the coordinate on the y axis of the entity associated to this mask.
+	 * */
+	public void onUpdate(int x, int y) {
+		this.x = x + offsetX;
+		this.y = y + offsetY;
+	}
+	
+	/**
+	 * Saves mask state
+	 * @param savedInstanceState 
+	 * @param j 
+	 * @param j2 
+	 * */
+	public void onSavedInstance(Bundle savedInstanceState, int i, int j) {
+		savedInstanceState.putInt(i + " " + j + " mask_offsetX", offsetX);
+		savedInstanceState.putInt(i + " " + j + " mask_offsetX", offsetY);
+		savedInstanceState.putInt(i + " " + j + " mask_x", x);
+		savedInstanceState.putInt(i + " " + j + " mask_y", y);
+	}
+
+	public void onRestoreSavedInstance(Bundle savedInstanceState, int i, int j) {
+		offsetX = savedInstanceState.getInt(i + " " + j + " mask_offsetX");
+		offsetY = savedInstanceState.getInt(i + " " + j + " mask_offsetX");
+		x = savedInstanceState.getInt(i + " " + j + " mask_x");
+		y = savedInstanceState.getInt(i + " " + j + " mask_y");
+	}
+}

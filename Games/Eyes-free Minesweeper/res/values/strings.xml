@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Blind Faith Games is a research project of the e-UCM
+            research group, developed by Gloria Pozuelo and Javier Álvarez, 
+            under supervision by Baltasar Fernández-Manjón and Javier Torrente.
+     
+      Copyright 2011-2012 e-UCM research group.
+    
+       e-UCM is a research group of the Department of Software Engineering
+            and Artificial Intelligence at the Complutense University of Madrid
+            (School of Computer Science).
+    
+            C Profesor Jose Garcia Santesmases sn,
+            28040 Madrid (Madrid), Spain.
+    
+            For more info please visit:  <http://blind-faith-games.e-ucm.es> or
+            <http://www.e-ucm.es>
+    
+    ****************************************************************************
+  	  This file is part of EYES-FREE MINESWEEPER, developed in the Blind Faith Games project.
+   
+         EYES-FREE MINESWEEPER, is free software: you can redistribute it and/or modify
+        it under the terms of the GNU Lesser General Public License as published by
+        the Free Software Foundation, either version 3 of the License, or
+        (at your option) any later version.
+    
+        EYES-FREE MINESWEEPER is distributed in the hope that it will be useful,
+        but WITHOUT ANY WARRANTY; without even the implied warranty of
+        MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+        GNU Lesser General Public License for more details.
+    
+        You should have received a copy of the GNU Lesser General Public License
+        along with Adventure.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<resources>
+
+    <!-- Menu item text [CHAR LIMIT=NONE] -->
+    <string name="accounts">Accounts</string>
+
+    <!-- Dialog button [CHAR LIMIT=NONE] -->
+    <string name="add_account">Add account...</string>
+
+    <!-- Name of the application in the launcher [CHAR LIMIT=NONE] -->
+    <string name="app_name">Accessible Minesweeper</string>
+
+    <!-- Dialog title text [CHAR LIMIT=NONE] -->
+    <string name="attention">Attention</string>
+
+    <!-- Button text [CHAR LIMIT=NONE] -->
+    <string name="connect">Connect</string>
+
+    <!-- Message text for "Connect" screen [CHAR LIMIT=NONE] -->
+    <string name="connect_text">This application requests permission to connect your mobile device to the cloud.</string>
+
+    <!-- Header text for "Connect" screen [CHAR LIMIT=NONE] -->
+    <string name="connect_to_the_cloud">Connect To The Cloud</string>
+
+    <!-- Header text for "Connected" screen [CHAR LIMIT=NONE] -->
+    <string name="connected_to_the_cloud">Connected To The Cloud</string>
+
+    <!-- Message text [CHAR LIMIT=NONE] -->
+    <string name="contacting_server">Contacting server...</string>
+
+    <!-- Button text [CHAR LIMIT=NONE] -->
+    <string name="disconnect">Disconnect</string>
+
+    <!-- Informational text for "Connected" screen with placeholder for account name [CHAR LIMIT=NONE] -->
+    <string name="disconnect_text">This device is currently connected to the cloud as %1$s.</string>
+
+    <!-- Footer text for "Connect" screen [CHAR LIMIT=NONE] -->
+    <string name="do_you_want_to_connect">Do you want to connect?</string>
+
+    <!-- Footer text for "Disconnect" screen [CHAR LIMIT=NONE] -->
+    <string name="do_you_want_to_disconnect">Do you want to disconnect?</string>
+
+    <!-- Dialog message text [CHAR LIMIT=NONE] -->
+    <string name="needs_account">To receive notifications from this app, you must first create an account.</string>
+
+    <!-- Notification message [CHAR LIMIT=NONE] -->
+    <string name="registration_error">Failed to register/unregister %1$s.</string>
+
+    <!-- Notification message [CHAR LIMIT=NONE] -->
+    <string name="registration_succeeded">Registered %1$s for C2DM messaging.</string>
+
+    <!-- Button text [CHAR LIMIT=NONE] -->
+    <string name="say_hello">Say Hello</string>
+
+    <!-- List view header text [CHAR LIMIT=NONE] -->
+    <string name="select_account">Select the account you wish to authorize:</string>
+
+    <!-- Dialog button text [CHAR LIMIT=NONE] -->
+    <string name="skip">Skip</string>
+
+    <!-- Notification message [CHAR LIMIT=NONE] -->
+    <string name="unregistration_succeeded">Unegistered %1$s for C2DM messaging.</string>
+    
+    <!-- =============================== -->
+    <!--           DIÁLOGOS  			 -->
+    <!-- =============================== -->        
+    
+    <string name="group_name">A game by, Blind Faith Games</string>
+    <string name="mode">This application works on portrait mode.</string>
+    <string name="interactionMode_select">This is a research project that tries to gather insight on how blind people play games on mobile
+	devices and how developers could make games that are not only accessible, but also enjoyable for them. Select an interaction mode depending
+	on if you have visual discapacity or not. To select make a long press to select an option</string>
+    <string name="interactionMode_select_TTS">This is a research project that tries to gather insight on how blind people play games on mobile
+	devices and how developers could make games that are not only accessible, but also enjoyable for them. Select an interaction mode depending
+	on if you have visual discapacity or not. To select make a long press to select an option</string>
+    <string name="blindMode_label">Blind interaction</string>
+    <string name="noBlindMode_label">Standard interaction</string>
+    <string name="tts_select">In order to get a better game experience, we recommend you to download the "IVONA Text-to-Speech HQ" synthesizer. Blind Faith Games is not associated or have any relation with IVONA project but we think that is the best
+	synthetizer. Would you like to install it?</string>
+    <string name="yes_label">Yes</string>
+    <string name="no_label">No</string>    
+    <string name="introMessage">Welcome, please select a difficulty</string>
+    <string name="intro_main_menu">Main menu Accessible Minesweeper, you can navigate through the menu by making simple taps in the different options
+    							 and just make a long press to select one of the options below</string>
+    <string name="buttonMessage">Go!</string>
+    <string name="create">Create new log</string>
+    
+    <!-- =============================== -->
+    <!--           MENU  			 -->
+    <!-- =============================== -->    
+        
+    <string name="minesweeperActivity">Minesweeper game</string>
+    <string name="gameOverMessage">Game Over!</string>
+    <string name="resetButtonMessage">Reset</string>
+    <string name="exitButton">Exit</string>
+    <string name="main_title">Accessible Minesweeper</string>
+    <string name="continue_label">Continue</string>
+    <string name="new_game_label">New Game</string>
+    <string name="tutorial_label">Game Tutorial</string>
+    <string name="keyConf_label">Key Configuration</string>
+    <string name="about_label">About</string>
+    <string name="exit_label">Exit</string>
+    <string name="about_title">About Accessible Minesweeper</string>
+    <string name="about_text">
+		Accessible Minesweeper, 2012. \n\n
+		
+		Accessible Minesweeper is part of Blind Faith Games (BFG), a research project about how to deliver eyes-free game experiences that are enjoyable on your Android&#8482; 
+		device regardless of your sight capabilities. If you have some time to spare, please help us to improve the game by filling in the feedback form that can be reached from the main menu.\n\n
+		
+		
+		BFG is a project of the e-UCM research group, developed by Gloria Pozuelo and Javier Álvarez.\n
+		e-UCM is a research group of the Department of Software Engineering and Artificial Intelligence at the Complutense University of Madrid.\n\n
+		
+		More info at: <a href="http://blind-faith-games.e-ucm.es">http://blind-faith-games.e-ucm.es</a>\n
+		Contact us at: android@e-ucm.es  \n\n      
+		
+		<i>Android is a trademark of Google Inc.</i>
+	</string>
+    <string name="settings_label">Settings</string>
+    <string name="settings_title">Minesweeper settings</string>
+    <string name="settings_shortcut">s</string>
+    <string name="music_title">Music</string>
+    <string name="music_summary">Play background music</string>
+    <string name="transcription_title">Transcription mode</string>
+    <string name="transcription_summary">It shows text that contains the TTS speech</string>
+    <string name="blind_interaction_title">Blind Interaction Mode</string>
+    <string name="blind_interaction_summary">It adds one more touch to every screen touch event</string>
+    <string name="blind_mode_title">Black Screen Mode</string>
+    <string name="blind_mode_summary">Allows you to use the application without any visual reference in the game and main menu.</string>
+    <string name="new_game_title">Difficulty</string>
+    <string name="easy_label">Easy</string>
+    <string name="medium_label">Medium</string>
+    <string name="hard_label">Hard</string>
+    <string name="game_title">Game</string>
+    <string name="flags_label">Turn Explore</string>
+    <string name="flags_title">Flags settings</string>
+    <string name="flags_shortcut">f</string>
+    <string name="instructions_label">Instructions</string>
+    <string name="instructions_title">Instructions Minesweeper</string>
+    <string name="instructions_general_label">Instructions</string>
+    <string name="instructions_general_title">Instructions Minesweeper</string>
+    <string name="instructions_controls_label">Controls</string>
+    <string name="instructions_controls_title">Controls Minesweeper</string>
+    <string name="instructions_general_text">The board is a mesh of buttons and some of them hide a mine. Your 
+		goal is to find all of those mines, without detonating any of them.\n\n
+		You can press any cell -dig mode- or mark it -exploration mode- 
+		with a flag, if you think it contains a mine. When you press a cell, several cells
+		can be discovered, and they will show you how many mines are around them.\n\n
+		\n\n
+		Options: make use of the settings while you are in the main menu in order to 
+		turn on the Speech synthesizer as well as music.</string>
+    <string name="instructions_controls_text">To play Android Minesweeper there are several controls you should know:\n\n
+		
+		Buttons, use:\n
+		- menu button - to repeat the last synthetizer voice message\n 
+		- mute button - switch between exploration and dig mode\n
+		- volume up button - turn on/off zoom mode\n
+		- camera button - listen to controls hints\n
+		- volume down key - listen to cell coordinates\n
+		- search button - listen to the cell context information, that is, you will listen at every cell information, 
+		that surround the selected one, beginning at the top cell and ending at the top left cell in clockwise order.\n\n
+		
+		If you don\'t have any of this buttons, you can change them, by making a simple tap on Key Configurations.\n\n
+		
+		Play with touch screen, use:\n
+		- one tap, to select a cell\n
+		- two taps, to dig a cell\n
+		- three taps, to explore a cell\n
+		- drag, to listen different features of the cell\n\n
+		
+		Play with keyboard, use:\n
+		- arrows, to select a cell\n
+		- enter button or similar, to dig or explore\n\n
+		
+		While in zoom mode, enter button or tap to dig or explore.</string>
+    <string name="cellStatePushed">Pushed</string>
+    <string name="cellStateNotPushed">Not Pushed</string>
+    <string name="cellStateMine">Mine</string>
+    <string name="cellStateFlagged">Flagged</string>
+    <string name="cellStateUnknown">Unknown state</string>
+    <string name="synthetizer_title">Synthesizer</string>
+    <string name="synthesizer_suggestion">We recommend you to download the "IVONA Text-to-Speech HQ" synthesizer</string>
+    <string name="LosePositiveButtonLabel">Reset</string>
+    <string name="LoseNegativeButtonLabel">Back to the main menu</string>
+    <string name="WinPositiveButtonLabel">Ok</string>
+    <string name="LoseDialogTitle">Game Over</string>
+    <string name="WinDialogTitle">CONGRATULATIONS!</string>
+    <string name="WinDialogMessage">"This time you win!"</string>
+    <string name="tts_title">Default TTS</string>
+    <string name="tts_summary">Enables voice synthetizer</string>
+    <string name="volume_up">Volume Up</string>
+    <string name="volume_down">Volume Down</string>
+    <string name="home">Home</string>
+    <string name="back">Back</string>
+    <string name="options">Options</string>
+    <string name="search">Search</string>
+    <string name="alert_dialog_difficulty_TTStext">Dialog difficulty</string>
+    <string name="alert_dialog_instructions_TTStext">Dialog</string>
+    <string name="main_menu_initial_TTStext">Main menu</string>
+    <string name="settings_menu_initial_TTStext">Menu settings. 
+			    By tapping on each element on this menu changes and reads an option. Particular in this menu you can
+			    find two profile options\: A and B whose activation enables another options on the menu. Of course, 
+			    you can continue enabling independently all option on the menu. You will find the next options on this menu\: 
+   </string>
+    <string name=" accounts_menu_initial_TTStext">accounts</string>
+    <string name="game_initial_TTStext">Game started!</string>
+    <string name="exploration_mode_TTStext">Exploration mode</string>
+    <string name="zoom_mode_TTStext">Zoom mode</string>
+    <string name="coordinates_information_button_TTStext">Position</string>
+    <string name="key_configuration_menu_initial_TTStext">
+			  	Key Configuration. By tapping on your left you could listen the action descriptions
+			     and by tapping on your right you will change the key related 
+			    by an action. If you are in blind interaction mode you have to do a long click
+			     to be able to change the configuration. You have the next options\: 
+    </string>
+    
+    <!-- =============================== -->
+    <!--           SETTINGS  			 -->
+    <!-- =============================== -->    
+        
+    <string name="button_coord">Coordinates Button</string>
+    <string name="button_instr">Instructions Button</string>
+    <string name="button_zoom">Zoom Button</string>
+    <string name="button_exploration">Exploration Button</string>
+    <string name="button_context">Reading cell context</string>
+    <string name="button_repeat">To repeat last sinthetizer voice message</string>
+    <string name="context_coordinates_title">Cells context</string>
+    <string name="context_coordinates_summary">Reads cells around the selected</string>
+    <string name="keydialog">Action configuration</string>
+    <string name="keydialog_text">Press any key</string>
+    <string name="form_label">Form</string>
+    <string name="on_back_pressed">You have to complete the form</string>
+    <string name="key_conf_fail">Not a valid key</string>
+    <string name="key_conf_success">You have changed the key associated with</string>
+
+    <!-- =============================== -->
+    <!--           FORMS	  			 -->
+    <!-- =============================== -->    
+    
+    <string name= "form_instructions1">You can navigate through this form menu by making 
+		long taps on the buttons next and previous situated below of each option set or text. If you click on a text or a button
+		its text will be read and, important!! if it\'s a answer button will be selected.
+	</string>
+	<string name= "form_instructions2">In this case, if you want, you can write in a field your opinion about the application. </string>
+	<string name= "form_instructions3">From now on, making taps, you can choose between different answers to respond questions.</string>
+    <string name= "form_instructions4">You can fill this field with your opinion.</string>
+    <string name="form_intro">This is a research project that tries to gather insight on how blind people play games on mobile
+					devices and how developers could make games that are not only accessible, but also enjoyable
+					for them. To fulfill these goals, we would like to know some details about you and how you
+					interact with technologies in general and games in particular. This will help us to interpret your
+					answers to this questionnaire. All the information collected through this questionnaire will be
+					anonymous, untraceable and will be treated confidentially and only used for the purpose of the
+					study. \n
+	</string>
+    <string name="q1_context">Mark the option that better describes your current visual level</string>
+    <string name="q2_context">Rate how often you play games in your computer or game console. Where 1 means "Never" and 5 "very often"</string>
+    <string name="q3_context">Rate how often you play games in your mobile device (phone or tablet). Where 1 means "Never" and 5 "very often"</string>
+    <string name="q4_context">Please rate how easy/difficult it was to learn to play. Where 1 means "very difficult" and 5 "very easy".</string>
+    <string name="q5_context">Rate how fun it was to play. Where 1 means "very boring" and 5 "very fun".</string>
+    <string name="q6_context">Rate how engaging was the game. Where 1 means "not engaging" and 5 "very engaging".</string>
+    <string name="q7_context">Rate how pleasant or frustrating was the interaction with the game. Where 1 means "very frustrating" and 5 "very pleasant".</string>
+    <string name="q8_context">Rate how you liked the story and narrative atmosphere (if applicable). Where 1 means "I didn\'t like it at all" and 5 "I liked it very much".</string>
+    <string name="q9_context">Rate how you liked the accessibility and control settings. Where 1 means "I didn\'t like it at all" and 5 "I liked it very much".</string>
+    <string name="q10_context">Rate how you liked the feedback provide by the game. Where 1 means "I didn\'t like it at all" and 5 "I liked it very much".</string>
+    <string name="q11_context">Finally, please provide any comments or suggestions to improve the game. Then tap on "Finish" to send the responses to us, and that\'s all!</string>
+    <string name="radio11">I am legally blind</string>
+    <string name="radio12">My vision is limited</string>
+    <string name="radio13">I have no visual disability</string>
+    <string name="one_context">1</string>
+    <string name="two_context">2</string>
+    <string name="three_context">3</string>
+    <string name="four_context">4</string>
+    <string name="five_context">5</string>
+    <string name="na">NA</string>
+    <string name="next_context">Next</string>
+    <string name="previous_context">Previous</string>
+    <string name="finish_context">Finish</string>
+    <string name="action_form">You have selected</string>
+    
+    <string name="load_text">Sending information... Please wait</string>
+    <string name="instructions_dialog_select">Select controls or instructions</string>
+    <string name="game_dialog_select">Select difficulty</string>
+
+    <!-- =============================== -->
+    <!--           TUTORIAL  			 -->
+    <!-- =============================== -->    
+    
+    <string name="tut_step">To go to the next tip, make a simple tap on the top of the screen.</string>
+    <string name="tut_finish">To finish the tutorial, make a simple tap on the top of the screen.</string>
+    <string name="tut_intro_text">In this tutorial, you will learn the game basics.</string>
+    <string name="tut_tap_text">You can make a simple tap on the screen to select a cell and to listen its state. Try to do it 
+    now!.</string>
+    <string name="tut_dtap_text">You can make a double tap on the screen to dig a cell. Try to do it now!.</string>
+    <string name="tut_trtap_text">You can make a triple tap on the screen to explore a non pushed cell or to non explore
+     a explored cell. Try to do it now!.</string>
+    <string name="tut_drag_text">You will be able to check out how to change the selected cell using drag events. Check it out!</string>
+    <string name="tut_keyboard_text">In Accessible Minesweeper you can assign some keys to some actions.
+									Some of them are:\n
+									Instructions reading: To remember how to play, use the Camera by default.\n
+									Coordinates: To read the cell state and coordinates, use the volume down key by default. \n
+									The most complex actions like Zoom mode, exploration mode or Read 
+									cell context are explained in tutorial next steps
+									Now, try to use them!.</string>
+    <string name="tut_zoom_mode_text">Zoom mode allows you to select a cell in an easier way than the normal mode, 
+						by tapping on the center of the screen. 
+						If you make a tap in some of the screen ends you will be changing the focused cell. 
+						Remember to make only one tap!. Moreover, the way of interact changes.
+						Now you have to do a tap to dig a cell and a double tap to flag a cell
+						To enable the zoom mode you can use the key Volume Up by default.
+						Now, try to use it!.
+</string>
+    <string name="tut_exploration_mode_text">Exploration mode allows you to flag cells independently of the event,
+     by making double or triple tap. To enable the exploration mode you can use the key Volume Mute by default. Try it now.</string>
+    <string name="tut_read_context_text">It\'s an additional option that reads the cells states around the focused
+     cell. To read cells you can use the search button by default.  Try it now!.</string>
+
+    <!-- =============================== -->
+    <!--           ACTIONS  			 -->
+    <!-- =============================== -->    
+    <string name="action_exploration">Exploration mode</string>
+    <string name="action_coordinates">Coordinates</string>
+    <string name="action_zoom">Zoom mode</string>
+    <string name="action_context">Reading cell context</string>
+    <string name="action_blind_mode">Blind mode</string>
+    <string name="action_instructions">Instructions</string>
+    <string name="action_repeat">To repeat sinthetizer voice message</string>
+
+    <string name="disabled">Disabled</string>
+    <string name="enabled">Enabled</string>
+    <string name="next">Next</string>
+    <string name="state">Current cell state: </string>
+    
+    <string name="pushCellSuccess">Great! you have digged various cells.</string>
+    <string name="transition_zoom">There is a cell change. Current cell</string>
+    
+    <string name="infoKeyConf">associated to</string>
+    <string name="infoKeyConffail">associated to any key.</string>
+    
+    <string name="screen_off_message">Your screen has turned off.</string>
+    <string name="screen_on_message">Your screen has turned on. May be you have to unlock your device.</string>
+    
+    <string name="other_side">Playing \'The other side of the door\'</string>
+    <string name="passing_action">Playing \'Passing action\'</string>
+</resources>

@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Blind Faith Games is a research project of the e-UCM
+            research group, developed by Gloria Pozuelo and Javier Álvarez, 
+            under supervision by Baltasar Fernández-Manjón and Javier Torrente.
+     
+      Copyright 2011-2012 e-UCM research group.
+    
+       e-UCM is a research group of the Department of Software Engineering
+            and Artificial Intelligence at the Complutense University of Madrid
+            (School of Computer Science).
+    
+            C Profesor Jose Garcia Santesmases sn,
+            28040 Madrid (Madrid), Spain.
+    
+            For more info please visit:  <http://blind-faith-games.e-ucm.es> or
+            <http://www.e-ucm.es>
+    
+    ****************************************************************************
+  	  This file is part of EYES-FREE GOLF, developed in the Blind Faith Games project.
+   
+         EYES-FREE GOLF, is free software: you can redistribute it and/or modify
+        it under the terms of the GNU Lesser General Public License as published by
+        the Free Software Foundation, either version 3 of the License, or
+        (at your option) any later version.
+    
+        EYES-FREE GOLF is distributed in the hope that it will be useful,
+        but WITHOUT ANY WARRANTY; without even the implied warranty of
+        MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+        GNU Lesser General Public License for more details.
+    
+        You should have received a copy of the GNU Lesser General Public License
+        along with Adventure.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<resources>
+
+    <!-- =============================== -->
+    <!--           DIALOGS  			 -->
+    <!-- =============================== -->        
+    
+	<string name="advice">We recommend you to use headphones in order to this game.</string>
+    <string name="group_name">A game by, Blind Faith Games</string>
+    <string name="mode">This application works on portrait mode.</string>
+    <string name="interactionMode_select">This is a research project that tries to gather insight on how blind people play games on mobile
+	devices and how developers could make games that are not only accessible, but also enjoyable for them. Select an interaction mode depending
+	on if you have visual discapacity or not. To select make a long press to select an option</string>
+    <string name="interactionMode_select_TTS">This is a research project that tries to gather insight on how blind people play games on mobile
+	devices and how developers could make games that are not only accessible, but also enjoyable for them. Select an interaction mode depending
+	on if you have visual discapacity or not. To select make a long press to select an option</string>
+    <string name="blindMode_label">Blind interaction</string>
+    <string name="noBlindMode_label">Standard interaction</string>
+    <string name="tts_select">In order to get a better game experience, we recommend you to download the "IVONA Text-to-Speech HQ" synthesizer. Blind Faith Games is not associated or have any relation with IVONA project but we think that is the best
+	synthetizer. Would you like to install it?</string>
+    <string name="yes_label">Yes</string>
+    <string name="no_label">No</string>    
+    <string name="introMessage">Welcome, please select a difficulty</string>
+    <string name="introMainMenu">Main menu Golf Game, you can navigate through the menu by making simple taps in the different options
+    							 and just make a long press to select one of the options below</string>
+    <string name="buttonMessage">Go!</string>
+    
+    <!-- =============================== -->
+    <!--           MENU	 	  			 -->
+    <!-- =============================== -->        
+    
+    <string name="golfGamerActivity">Golf game</string>
+    <string name="exitButton">Exit</string>
+    <string name="app_name">Golf Game</string>
+    <string name="main_title">Golf Game</string>
+    <string name="continue_label">Continue</string>
+    <string name="new_game_label">New Game</string>
+    <string name="keyConf_label">Key Configuration</string>
+    <string name="about_label">About</string>
+    <string name="exit_label">Exit</string>
+    <string name="tutorial_label">Game Tutorial</string>
+	<string name="form_label">Form</string>
+    <string name="about_title">About Golf Game</string>
+    <string name="about_text">
+		Golf Game, 2012. \n\n
+		
+		Golf Game is part of Blind Faith Games (BFG), a research project about how to deliver eyes-free game experiences that are enjoyable on your Android&#8482; 
+		device regardless of your sight capabilities. If you have some time to spare, please help us to improve the game by filling in the feedback form that can be reached from the main menu.\n\n
+		
+		
+		BFG is a project of the e-UCM research group, developed by Gloria Pozuelo and Javier Álvarez.\n
+		e-UCM is a research group of the Department of Software Engineering and Artificial Intelligence at the Complutense University of Madrid.\n\n
+		
+		More info at: <a href="http://blind-faith-games.e-ucm.es">http://blind-faith-games.e-ucm.es</a>\n
+		Contact us at: android@e-ucm.es  \n\n   
+		
+		Music: Kevin MacLeod \n\n   
+		
+		<i>Android is a trademark of Google Inc.</i>
+	</string>
+	
+    <!-- =============================== -->
+    <!--           SETTINGS  			 -->
+    <!-- =============================== -->        
+    
+    <string name="settings_label">Settings</string>
+    <string name="settings_title">Golf Game settings</string>
+    <string name="settings_shortcut">s</string>
+    <string name="main_category">Main</string>
+    <string name="profiles_category">Profiles</string>
+    <string name="custom_profile_category">Custom Profile</string>
+    <string name="music_title">Music</string>
+    <string name="music_summary">Play background music</string>
+    <string name="tts_title">Default TTS</string>
+    <string name="tts_summary">Enables voice synthetizer</string>
+    <string name="infoTarget_title">Clues to find target</string>
+    <string name="infoTarget_summary">Enables sounds that will be played when you find the target dragging on the screen</string>
+    <string name="v_feedback_title">Vibration feedback</string>
+    <string name="v_feedback_summary">A range of vibrations helps to find target</string>
+    <string name="s_feedback_title">Sound effect feedback</string>
+    <string name="s_feedback_summary">Stereo sound helps to find target</string>
+    <string name="doppler_title">Sound post-shot</string>
+    <string name="doppler_summary">A sound will be played before you shoot.</string>
+    <string name="profileA_title">Profile A</string>
+    <string name="profileA_summary"> - </string>
+    <string name="profileB_title">Profile B</string>
+    <string name="profileB_summary"> - </string>
+    <string name="transcription_title">Transcription mode</string>
+    <string name="transcription_summary">It shows text that contains the TTS speech</string>
+    <string name="blind_interaction_title">Blind Interaction Mode</string>
+    <string name="blind_interaction_summary">It adds one more touch to each screen touch event</string>
+    <string name="blind_mode_title">Black Screen Mode</string>
+    <string name="blind_mode_summary">Allows to use the application without any visual reference in the game and main menu.</string>
+    <string name="game_title">Game</string>
+    <string name="flags_title">Flags settings</string>
+    <string name="flags_shortcut">f</string>
+    <string name="instructions_label">Instructions</string>
+    <string name="instructions_title">How to play Golf game</string>
+    <string name="instructions_general_label">How to use this game</string>
+    <string name="instructions_controls_label">How to configurate</string>
+    <string name="instructions_general_text">You only have to point and shoot within the shot area!  
+    This area is located at the bottom of the screen. Don\'t worry if you don\'t find the shot area, if you do any tap or gesture outside this area
+    you\'ll hear a beep sound. </string>
+    <string name="instructions_controls_text">Within settings you can choose between the next options:\n
+		1 - UpMode enables slingshot mode. In golf, exists two modes of shot. Fling and Slingshot. 
+		The first one is enabled by default, allows you shoot, doing a quick scroll on the shot area. 
+		Using Slingshot mode you have to do a tap, drag and release your finger to shot.\n
+		2 - Info target allows you to find the hole by simply touching and dragging on the screen. \n
+		3 - Sound post-shot enables to play a sound whose pitch is decreased during a shot.\n
+		4 - Vibration and Sound feedback - before you shot, a vibration/sound will help you to find where is the hole. To use them during
+		the game you have to describe an arc by dragging your finger on the shot area. You will find the shot area at the bottom on the screen. If you try to do this gestures
+		outside the shot area you will hear a beep sound. The louder vibration/sound you feel/heard, 
+		the more accurate will be your shoot. Moreover in sound feedback,
+		if you use headphones, the sound will be played only on one headphone. That indicates that the best position is on the left
+		or on the right from your actual position while you point describing an arc dragging your finger on the shot area.\n
+		you will find more information in the game tutorial.
+	</string>
+    <string name="synthetizer_title">Synthesizer</string>
+        <string name="synthesizer_suggestion">We recommend you to download the "IVONA Text-to-Speech HQ" synthesizer</string>
+    <string name="onup_title">Slingshot mode</string>
+    <string name="onup_summary">Enables to shoot like a Slingshot.</string>
+    <string name="volume_up">Volume Up</string>
+    <string name="volume_down">Volume Down</string>
+    <string name="home">Home</string>
+    <string name="back">Back</string>
+    <string name="options">Options</string>
+    <string name="search">Search</string>
+    <string name="alert_dialog_modes_TTStext">Dialog select mode</string>
+    <string name="alert_dialog_instructions_TTStext">Dialog</string>
+    <string name="main_menu_initial_TTStext">Main menu</string>
+    <string name="settings_menu_initial_TTStext">Menu settings. 
+			    By tapping on each element on this menu changes and reads an option. Particular in this menu you can
+			    find two profile options\: A and B whose activation enables another options on the menu. Of course, 
+			    you can continue enabling independently all option on the menu. You will find the next options on this menu\: 
+   </string>
+    <string name="game_initial_TTStext">Game started!</string>
+    <string name="game_initial_stage_TTStext">Game started! Stage 1</string>
+    <string name="coordinates_information_button_TTStext">Position</string>
+    <string name="key_configuration_menu_initial_TTStext">
+			  	Key Configuration. By tapping on your left you could listen the action descriptions
+			     and by tapping on your right you will change the key related 
+			    by an action. If you are in blind interaction mode you have to do a long click
+			     to be able to change the configuration. You have the next options\: 
+    </string>
+    <string name="keydialog">Action configuration</string>
+    <string name="keydialog_text">Press any key</string>
+    <string name="button_speak_record">Play record in game</string>
+    <string name="button_repeat">To repeat the last sinthetizer voice message</string>
+    <string name="StageMode">Stage Mode</string>
+    <string name="FreeMode">Free Mode</string>
+    <string name="Yes">Yes</string>
+    <string name="No">No</string>
+    <string name="new_game_dialog_title">Mode Selection</string>
+    <string name="recordSpeech">your actual record is</string>
+    <string name="counterSpeech">your actual count is</string>
+    <string name="newRecordSpeech">New record!</string>
+    <string name="EndingDialogTitle">Round completed</string>
+    <string name="EndingPositiveButtonLabel">Ok</string>
+    <string name="EndingPositiveButtonLabelSpeech">Press ok to back to the main menu</string>
+    <string name="alertOutsideShotArea">You are outside of the shot area. To be able to shot you have to make a scroll gesture on the bottom of the screen.</string>
+    <string name="ranking_title">Time,  Date and  Record. </string>
+    <string name="ranking_speech">Previous games ranking. You can listen this ranking clicking on each cell.</string>
+    <string name="instructions_dialog_select">Select configuration or use</string>
+    <string name="game_dialog_select">Select difficulty</string>
+    <string name="initial_settings">Click any option</string>
+    <string name="key_conf_fail">Not a valid key</string>  
+    <string name="key_conf_success">You have changed the key associated with</string>
+    <string name="stage_speech">Stage number</string>  
+   
+    <!-- =============================== -->
+    <!--           TUTORIAL  			 -->
+    <!-- =============================== -->    
+
+     <string name="tutorial_step0_dialog_select">In this tutorial you\'ll learn the game basics. The game goal is achieve the highest score. This must be successful launch pit.
+         You can launch the ball at the launch area located at the bottom of the screen. When you will leave this area, you will hear a beep notification sound. We have two modes of play,
+         free mode, where you can make as many shots as you want and 18 holes mode, which will count the score on 18 holes. To find your score, you has
+         a marker on the left edge of the screen to the height of the throwing area. If you make a click on it, it will notify you the cumulative score achieved.</string>
+    <string name="tutorial_step1_dialog_select">All this features can be enabled/disabled in the settings menu. Tutorial begins! To shoot you have to do a fling on the shoot area.
+    i.e. you have to do a quick scroll gesture in the direction that you want to shoot</string>
+    <string name="tutorial_step2_dialog_select">By default that is the shot mode. Each time you score a shot, the target will change its position.</string>
+    <string name="tutorial_step3_dialog_select">You can change the shot mode in settings. To shoot, drag as if it were a slingshot and release the screen touch.</string>
+    <string name="tutorial_step4_dialog_select">The clue target option, let you localize the target by touches and drags. Let\'s try it.</string>
+    <string name="tutorial_step5_dialog_select">This sound is emitted when you find the target.</string>
+    <string name="tutorial_step6_dialog_select">The next two options give you information about which direction is best.
+    		The vibration gives you a clue about where is located the target. 
+    		You have to describe an arc, by dragging your finger on the shot area to feel this feature.  
+    		The position in the arc that you describe that sound louder will indicate you a which is the best direction to shot.
+    		Once you have find a good position in the arc, do the gesture appropiated down.</string>
+    <string name="tutorial_step7_dialog_select">The sound effect also is an aid to locate the target at the shot. 
+    You have to describe an arc, dragging in the shot area to listen to this feature. 
+    The position in the arc that you describe that sound louder indicates a better direction to do a shot.
+    Once you have find a good position in the arc, do the gesture appropiated down.</string>
+    <string name="tutorial_step8_dialog_select">The sound when you don\'t score a shot indicates how far your shot has gone out of the target. 
+    Sound deeper indicates that your shot has been worse. If you scores you \'ll hear a applause.</string>
+    <string name="tutorial_step9_dialog_select">The tutorial finish here.</string> 
+    
+    <!-- =============================== -->
+    <!--           TUTORIAL  			 -->
+    <!-- =============================== -->    
+    
+    <string name="bing_ono">bing bing!</string>    
+    <string name="bip_ono">Bip bip!</string>    
+    <string name="clue_feed_back_sound_ono">Ring!</string>    
+    <string name="hit_ball_ono">Tip!</string>    
+    <string name="left_ono">Biiiip!</string>    
+    <string name="main_ono">Playing \'Deliberate Thought\'</string>    
+    <string name="missed_ono">biiiip!</string>    
+    <string name="previous_shoot_feedback_sound_ono">Sonar</string>    
+    <string name="right_ono">biiiip!</string>    
+    <string name="sound_shot_ono">Toc!</string>    
+    <string name="storm_ono"> - Wind - </string>    
+    <string name="air_plane_bing"> - Pim - </string>    
+    <string name="win_sound_ono"> - Applause - </string> 
+    <string name="sling">tuuumm</string> 
+    
+    <string name="disabled">Disabled</string>
+    <string name="enabled">Enabled</string>
+    
+    <string name="infoKeyConf">associated to</string>
+    <string name="infoKeyConffail">associated to any key.</string>
+    
+    <string name="scoreboard_success">Your punctuaction have been incremented to </string>
+    <string name="scoreboard_fail">Your punctuaction have been decremented to </string>
+    <string name="scoreboard_reset">Your number of consecutive shots is zero.</string>
+    <string name="scoreboard_free_mode">Your number of consecutive shots is</string>
+    
+    <!-- =============================== -->
+    <!--           FORMS  			 -->
+    <!-- =============================== -->  
+    
+    <string name= "form_instructions1">You can navigate through this form menu by making 
+		long taps on the buttons next and previous situated below of each option set or text. If you click on a text or a button and
+		its text will be read and, important!! if it\'s a answer button will be selected.
+	</string>
+	<string name= "form_instructions2">In this case, if you want, you can write in a field your opinion about the application. </string>
+	<string name= "form_instructions3">From now on, making taps, you can choose between different answers to respond questions.</string>
+    <string name= "form_instructions4">You can fill this field with your opinion.</string>
+    <string name="form_intro">This is a research project that tries to gather insight on how blind people play games on mobile
+					devices and how developers could make games that are not only accessible, but also enjoyable
+					for them. To achieve these goals, we would like to know some details about you and how you
+					interact with technologies in general and games in particular. This will help us to interpret your
+					answers to this questionnaire. All the information collected through this questionnaire will be
+					anonymous, untraceable and will be treated confidentially and only used for the purpose of the
+					study. \n
+	</string>
+    <string name="q1_context">Mark the option that better describes your current visual level</string>
+    <string name="q2_context">Rate how often you play games in your computer or game console. Where 1 means "Never" and 5 "very often"</string>
+    <string name="q3_context">Rate how often you play games in your mobile device (phone or tablet). Where 1 means "Never" and 5 "very often"</string>
+    <string name="q4_context">Please rate how easy/difficult it was to learn to play. Where 1 means "very difficult" and 5 "very easy".</string>
+    <string name="q5_context">Rate how fun it was to play. Where 1 means "very boring" and 5 "very fun".</string>
+    <string name="q6_context">Rate how engaging was the game. Where 1 means "not engaging" and 5 "very engaging".</string>
+    <string name="q7_context">Rate how pleasant or frustrating was the interaction with the game. Where 1 means "very frustrating" and 5 "very pleasant".</string>
+    <string name="q8_context">Rate how you liked the story and narrative atmosphere (if applicable). Where 1 means "I didn\'t like it at all" and 5 "I liked it very much".</string>
+    <string name="q9_context">Rate how you liked the accessibility and control settings. Where 1 means "I didn\'t like it at all" and 5 "I liked it very much".</string>
+    <string name="q10_context">Rate how you liked the feedback provide by the game. Where 1 means "I didn\'t like it at all" and 5 "I liked it very much".</string>
+    <string name="q11_context">Finally, please provide any comments or suggestions to improve the game. Then tap on "Finish" to send the responses to us, and that\'s all!</string>
+    <string name="radio11">I am legally blind</string>
+    <string name="radio12">My vision is limited</string>
+    <string name="radio13">I have no visual disability</string>
+    <string name="one_context">1</string>
+    <string name="two_context">2</string>
+    <string name="three_context">3</string>
+    <string name="four_context">4</string>
+    <string name="five_context">5</string>
+    <string name="na">NA</string>
+    <string name="next_context">Next</string>
+    <string name="previous_context">Previous</string>
+    <string name="finish_context">Finish</string>
+    <string name="action_form">You have selected</string>
+    
+    <!-- =============================== -->
+    <!--           OTHERS	  			 -->
+    <!-- =============================== -->        
+    
+    <string name="screen_off_message">Your screen has turned off.</string>
+    <string name="screen_on_message">Your screen has turned on. May be you have to unlock your device.</string>
+    <string name="load_text">Sending information... Please wait</string>
+</resources>

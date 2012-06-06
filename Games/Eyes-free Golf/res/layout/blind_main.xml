@@ -1,0 +1,120 @@
+<!--
+  Blind Faith Games is a research project of the e-UCM
+            research group, developed by Gloria Pozuelo and Javier Álvarez, 
+            under supervision by Baltasar Fernández-Manjón and Javier Torrente.
+     
+      Copyright 2011-2012 e-UCM research group.
+    
+       e-UCM is a research group of the Department of Software Engineering
+            and Artificial Intelligence at the Complutense University of Madrid
+            (School of Computer Science).
+    
+            C Profesor Jose Garcia Santesmases sn,
+            28040 Madrid (Madrid), Spain.
+    
+            For more info please visit:  <http://blind-faith-games.e-ucm.es> or
+            <http://www.e-ucm.es>
+    
+    ****************************************************************************
+  	  This file is part of EYES-FREE GOLF, developed in the Blind Faith Games project.
+   
+         EYES-FREE GOLF, is free software: you can redistribute it and/or modify
+        it under the terms of the GNU Lesser General Public License as published by
+        the Free Software Foundation, either version 3 of the License, or
+        (at your option) any later version.
+    
+        EYES-FREE GOLF is distributed in the hope that it will be useful,
+        but WITHOUT ANY WARRANTY; without even the implied warranty of
+        MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+        GNU Lesser General Public License for more details.
+    
+        You should have received a copy of the GNU Lesser General Public License
+        along with Adventure.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    android:padding="30dip" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical" >
+
+		<Button
+			android:id="@+id/new_button"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:text="@string/new_game_label"
+			android:contentDescription="@string/new_game_label"
+			android:layout_marginBottom="20dp"
+			android:textColor="@color/black"
+			android:background="@drawable/blind_background_button" />
+		<Button
+			android:id="@+id/tutorial_button"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:text="@string/tutorial_label"
+			android:contentDescription="@string/tutorial_label"
+			android:layout_marginBottom="20dp"
+			android:textColor="@color/black"
+			android:background="@drawable/blind_background_button" />
+		<Button
+			android:id="@+id/settings_button"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:text="@string/settings_label" 
+			android:contentDescription="@string/settings_label"
+			android:layout_marginBottom="20dp"
+			android:textColor="@color/black"
+			android:background="@drawable/blind_background_button" />
+		<Button
+			android:id="@+id/keyConf_button"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:text="@string/keyConf_label" 
+			android:contentDescription="@string/keyConf_label"
+			android:layout_marginBottom="20dp"
+			android:textColor="@color/black"
+			android:background="@drawable/blind_background_button" />
+		<Button
+			android:id="@+id/instructions_button"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:text="@string/instructions_label" 
+			android:contentDescription="@string/instructions_label"
+			android:layout_marginBottom="20dp"
+			android:textColor="@color/black"
+			android:background="@drawable/blind_background_button" />
+		<Button
+			android:id="@+id/about_button"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:text="@string/about_label"
+			android:contentDescription="@string/about_label"
+			android:layout_marginBottom="20px"
+			android:textColor="@color/black"
+			android:background="@drawable/blind_background_button" />
+		<Button
+			android:id="@+id/form_button"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:text="@string/form_label"
+			android:contentDescription="@string/form_label"
+			android:layout_marginBottom="20px"
+			android:textColor="@color/black"
+			android:background="@drawable/blind_background_button" />
+		<Button
+			android:id="@+id/exit_button"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:text="@string/exit_label" 
+			android:contentDescription="@string/exit_label" 
+			android:textColor="@color/black"
+			android:background="@drawable/blind_background_button" />
+	</LinearLayout>
+
+</LinearLayout>

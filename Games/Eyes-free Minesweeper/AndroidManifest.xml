@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Blind Faith Games is a research project of the e-UCM
+            research group, developed by Gloria Pozuelo and Javier Álvarez, 
+            under supervision by Baltasar Fernández-Manjón and Javier Torrente.
+     
+      Copyright 2011-2012 e-UCM research group.
+    
+       e-UCM is a research group of the Department of Software Engineering
+            and Artificial Intelligence at the Complutense University of Madrid
+            (School of Computer Science).
+    
+            C Profesor Jose Garcia Santesmases sn,
+            28040 Madrid (Madrid), Spain.
+    
+            For more info please visit:  <http://blind-faith-games.e-ucm.es> or
+            <http://www.e-ucm.es>
+    
+    ****************************************************************************
+  	  This file is part of EYES-FREE MINESWEEPER, developed in the Blind Faith Games project.
+   
+         EYES-FREE MINESWEEPER, is free software: you can redistribute it and/or modify
+        it under the terms of the GNU Lesser General Public License as published by
+        the Free Software Foundation, either version 3 of the License, or
+        (at your option) any later version.
+    
+        EYES-FREE MINESWEEPER is distributed in the hope that it will be useful,
+        but WITHOUT ANY WARRANTY; without even the implied warranty of
+        MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+        GNU Lesser General Public License for more details.
+    
+        You should have received a copy of the GNU Lesser General Public License
+        along with Adventure.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="es.eucm.blindfaithgames.minesweeper"
+    android:versionCode="3"
+    android:versionName="1.0" >
+
+    <!-- C2DM requires Android SDK version 2.2 (API level 8) or above -->
+    <uses-sdk android:minSdkVersion="8" />
+
+    <!-- Permission for internet access -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- Permission to keep the processor from sleeping -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <!-- Permission to request authtokens from the AccountManager -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name="es.eucm.blindfaithgames.bfgtoolkit.feedback.AcraSending"
+        android:icon="@drawable/app_icon"
+        android:label="@string/app_name" >
+        <activity
+            android:name=".SplashScreen"
+            android:debuggable="true"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Main activity -->
+        <activity
+            android:name=".MinesweeperActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="es.eucm.blindfaithgames.minesweeper.MinesweeperActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- Account selection activity -->
+        <activity
+            android:name=".AccountsActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".AboutActivity"
+            package="org.example.minesweeper"
+            android:label="@string/about_title"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".CheckKeyActivity"
+            android:label="@string/keyConf_label"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Dialog" >
+        </activity>
+        <activity
+            android:name=".PrefsActivity"
+            android:label="@string/settings_title"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".SynthetizerActivity"
+            android:label="@string/synthetizer_title" >
+        </activity>
+        <activity
+            android:name=".Minesweeper"
+            android:configChanges="orientation"
+            android:label="@string/game_title"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".InstructionsGeneralActivity"
+            android:label="@string/instructions_general_title"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".InstructionsControlsActivity"
+            android:label="@string/instructions_controls_title"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".KeyConfActivity"
+            android:label="@string/keyConf_label"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".FormActivity"
+            android:label="@string/form_label"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".MinesweeperTutorialActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+    </application>
+
+</manifest>

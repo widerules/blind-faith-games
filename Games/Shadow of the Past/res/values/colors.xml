@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Blind Faith Games is a research project of the e-UCM
+            research group, developed by Gloria Pozuelo and Javier Álvarez, 
+            under supervision by Baltasar Fernández-Manjón and Javier Torrente.
+     
+      Copyright 2011-2012 e-UCM research group.
+    
+       e-UCM is a research group of the Department of Software Engineering
+            and Artificial Intelligence at the Complutense University of Madrid
+            (School of Computer Science).
+    
+            C Profesor Jose Garcia Santesmases sn,
+            28040 Madrid (Madrid), Spain.
+    
+            For more info please visit:  <http://blind-faith-games.e-ucm.es> or
+            <http://www.e-ucm.es>
+    
+    ****************************************************************************
+  	  This file is part of SHADOW OF THE PAST, developed in the Blind Faith Games project.
+   
+        SHADOW OF THE PAST is free software: you can redistribute it and/or modify
+        it under the terms of the GNU Lesser General Public License as published by
+        the Free Software Foundation, either version 3 of the License, or
+        (at your option) any later version.
+    
+        SHADOW OF THE PAST is distributed in the hope that it will be useful,
+        but WITHOUT ANY WARRANTY; without even the implied warranty of
+        MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+        GNU Lesser General Public License for more details.
+    
+        You should have received a copy of the GNU Lesser General Public License
+        along with Adventure.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<resources>
+
+    <!-- Colors text -->
+	<color name="text_button_color">#A80000</color>
+	<color name="text_button_color_pressed">#FF0000</color>
+	<color name="text_button_color_focused">#FF0000</color>
+
+	<!-- Colors General -->
+    <color name="blue1">#646699FF</color>
+    <color name="blue2">#643399FF</color>
+    <color name="blue3">#640B0B61</color>
+    
+    <color name="red1">#FF0000</color>
+    <color name="red2">#A80000</color>
+    <color name="red3">#400000</color>
+    
+    <color name="green0">#ADFF2F</color>
+    <color name="green1">#99CC99</color>
+    <color name="green2">#339933</color>
+    <color name="green3">#003300</color>
+    
+    <!-- Colors Button -->
+    <color name="button_color">#400000</color>
+    <color name="button_color_pressed">#64400000</color>
+    <color name="button_color_focused">#64400000</color>
+
+    <color name="transparent_blue">#646699FF</color>
+    <color name="transparent_black">#64000000</color>
+    <color name="transparent_red">#64400000</color>
+    <color name="transparent_green">#64ADFF2F</color>
+
+    <color name="black">#000000</color>
+    <color name="purple">#5A004A</color>
+
+</resources>

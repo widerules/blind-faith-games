@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Blind Faith Games is a research project of the e-UCM
+            research group, developed by Gloria Pozuelo and Javier Álvarez, 
+            under supervision by Baltasar Fernández-Manjón and Javier Torrente.
+     
+      Copyright 2011-2012 e-UCM research group.
+    
+       e-UCM is a research group of the Department of Software Engineering
+            and Artificial Intelligence at the Complutense University of Madrid
+            (School of Computer Science).
+    
+            C Profesor Jose Garcia Santesmases sn,
+            28040 Madrid (Madrid), Spain.
+    
+            For more info please visit:  <http://blind-faith-games.e-ucm.es> or
+            <http://www.e-ucm.es>
+    
+    ****************************************************************************
+  	  This file is part of EYES-FREE GOLF, developed in the Blind Faith Games project.
+   
+         EYES-FREE GOLF, is free software: you can redistribute it and/or modify
+        it under the terms of the GNU Lesser General Public License as published by
+        the Free Software Foundation, either version 3 of the License, or
+        (at your option) any later version.
+    
+        EYES-FREE GOLF is distributed in the hope that it will be useful,
+        but WITHOUT ANY WARRANTY; without even the implied warranty of
+        MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+        GNU Lesser General Public License for more details.
+    
+        You should have received a copy of the GNU Lesser General Public License
+        along with Adventure.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory android:title="@string/main_category" >
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="music"
+            android:summary="@string/music_summary"
+            android:title="@string/music_title" />
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="tts"
+            android:summary="@string/tts_summary"
+            android:title="@string/tts_title" />
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="transcription"
+            android:summary="@string/transcription_summary"
+            android:title="@string/transcription_title" />
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="interaction"
+            android:summary="@string/blind_interaction_summary"
+            android:title="@string/blind_interaction_title" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="blind_mode"
+            android:summary="@string/blind_mode_summary"
+            android:title="@string/blind_mode_title" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/profiles_category" >
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="profile A"
+            android:summary="@string/profileA_summary"
+            android:title="@string/profileA_title" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="profile B"
+            android:summary="@string/profileB_summary"
+            android:title="@string/profileB_title" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/custom_profile_category" >
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="infoTarget"
+            android:summary="@string/infoTarget_summary"
+            android:title="@string/infoTarget_title" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="On up event"
+            android:summary="@string/onup_summary"
+            android:title="@string/onup_title" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="vibration feedback"
+            android:summary="@string/v_feedback_summary"
+            android:title="@string/v_feedback_title" />
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="sound feedback"
+            android:summary="@string/s_feedback_summary"
+            android:title="@string/s_feedback_title" />
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="doppler effect"
+            android:summary="@string/doppler_summary"
+            android:title="@string/doppler_title" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

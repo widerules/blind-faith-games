@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Blind Faith Games is a research project of the e-UCM
+            research group, developed by Gloria Pozuelo and Javier Álvarez, 
+            under supervision by Baltasar Fernández-Manjón and Javier Torrente.
+     
+      Copyright 2011-2012 e-UCM research group.
+    
+       e-UCM is a research group of the Department of Software Engineering
+            and Artificial Intelligence at the Complutense University of Madrid
+            (School of Computer Science).
+    
+            C Profesor Jose Garcia Santesmases sn,
+            28040 Madrid (Madrid), Spain.
+    
+            For more info please visit:  <http://blind-faith-games.e-ucm.es> or
+            <http://www.e-ucm.es>
+    
+    ****************************************************************************
+  	  This file is part of EYES-FREE GOLF, developed in the Blind Faith Games project.
+   
+         EYES-FREE GOLF, is free software: you can redistribute it and/or modify
+        it under the terms of the GNU Lesser General Public License as published by
+        the Free Software Foundation, either version 3 of the License, or
+        (at your option) any later version.
+    
+        EYES-FREE GOLF is distributed in the hope that it will be useful,
+        but WITHOUT ANY WARRANTY; without even the implied warranty of
+        MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+        GNU Lesser General Public License for more details.
+    
+        You should have received a copy of the GNU Lesser General Public License
+        along with Adventure.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<resources>
+    
+    <!-- =============================== -->
+    <!--           DIÁLOGOS  			 -->
+    <!-- =============================== -->        
+    
+	<string name="advice">Aconsejamos utilizar auriculares para jugar a este juego.</string>
+	<string name="group_name">Juego hecho por, Blind Faith Games</string>	
+	<string name="mode">Esta aplicación funciona con el dispositivo móvil en posición vertical.</string>
+    <string name="interactionMode_select">Esto es un proyecto de investigación que trata de obtener una visión sobre cómo las personas con discapacidad visual pueden
+        jugar a juegos en dispositivos móviles y cómo los desarrolladores pueden crear juegos que no son sólo accesibles,
+        sino también agradables para ellos. Seleccione un modo de interacción dependiendo de si tiene discapacidad o no. Para seleccionar una opción mantenga la pulsación</string>
+    <string name="interactionMode_select_TTS">Esto es un proyecto de investigación que trata de obtener una visión sobre cómo las personas con discapacidad visual pueden
+        jugar a juegos en dispositivos móviles y cómo los desarrolladores pueden crear juegos que no son sólo accesibles,
+        sino también agradables para ellos. Seleccione un modo de interacción dependiendo de si tiene discapacidad o no. Para seleccionar una opción mantenga la pulsación</string>
+    <string name="blindMode_label">Interacción para ciegos</string>
+    <string name="noBlindMode_label">Interacción estándar</string>
+   	<string name="tts_select">Le recomendamos descargar el sintetizador "IVONA Text-to-Speech HQ", por su gran calidad. Nosotros no colaboramos con el proyecto IVONA pero es el mejor sintetizador
+   	que hemos encontrado. ¿Desea instalarlo?</string>
+   	<string name="yes_label">Sí</string>
+    <string name="no_label">No</string>    
+    <string name="introMessage">Bienvenido, seleccione una dificultad</string>
+    <string name="introMainMenu">Menú principal de Golf Accesible. Puede navegar por el menú mediante pulsaciones
+     simples sobre las diferentes opciones ,para seleccionar haga una pulsación larga sobre la opción que desee.</string>
+    <string name="buttonMessage">¡Adelante!</string>
+    
+    <!-- =============================== -->
+    <!--           MENU  	 			 -->
+    <!-- =============================== -->        
+    
+    <string name="golfGamerActivity">Golf Accesible</string>
+    <string name="exitButton">Salir</string>
+    <string name="app_name">Golf Accesible</string>
+    <string name="main_title">Golf Accesible</string>
+    <string name="continue_label">Continuar</string>
+    <string name="new_game_label">Nuevo juego</string>
+    <string name="keyConf_label">Configuración de teclado</string>
+    <string name="about_label">Acerca de</string>
+    <string name="exit_label">Salir</string>
+    <string name="tutorial_label">Tutorial</string>
+    <string name="form_label">Formulario</string>
+    <string name="about_title">Acerca de Golf Accesible</string>
+    <string name="about_text">		  
+		Golf Game, 2012. \n\n
+		
+		Golf Game es parte del proyecto de investigación Blind Faith Games (BFG), que trata de averiguar estrategias de diseño adecuadas para producir juegos de los que puedan disfrutarse en un dispositivo con Android&#8482;  
+		independientemente de las capacidades de visión de la persona. Por favor, si tiene cinco minutos le agradeceríamos que rellenara el formulario de evaluación que encontrará a través del menú principal de la aplicación, esto nos ayudará a mejorarla.\n\n
+		
+		BFG es un proyecto del grupo e-UCM, y ha sido desarrollado por Gloria Pozuelo y Javier Álvarez.\n
+		e-UCM es un grupo de investigación reconocido del Departamento de Ingeniería del Software e Inteligencia Artificial de la Universidad Complutense de Madrid.\n\n
+		
+		Para más información visite: <a href="http://blind-faith-games.e-ucm.es">http://blind-faith-games.e-ucm.es</a>\n
+		Dirección de contacto: android@e-ucm.es \n\n  
+		
+		Music: Kevin MacLeod \n\n     
+		
+		<i>Android es una marca registrada de Google Inc.</i>
+	</string>
+	
+    <!-- =============================== -->
+    <!--           SETTINGS  			 -->
+    <!-- =============================== -->        
+    
+    <string name="settings_label">Configuración</string>
+    <string name="settings_title">Configuración de Golf Accesible</string>
+    <string name="settings_shortcut">s</string>
+    <string name="main_category">Principal</string>
+    <string name="profiles_category">Perfiles</string>
+    <string name="custom_profile_category">Perfil personalizado</string>
+    <string name="music_title">Música</string>
+    <string name="music_summary">Reproducir música de fondo</string>
+    <string name="tts_title">Sintetizador por defecto</string>
+    <string name="tts_summary">Habilita el sintetizador</string>
+    <string name="infoTarget_title">Pista para encontrar el objetivo</string>
+    <string name="infoTarget_summary">Habilita un sonido que se reproduce cuando encuentre el objetivo mediante eventos de arrastre sobre la pantalla</string>
+    <string name="v_feedback_title">Vibración</string>
+    <string name="v_feedback_summary">Efecto de vibración para ayudar a encontrar la localización del objetivo</string>
+    <string name="s_feedback_title">Pistas con efectos de sonido</string>
+    <string name="s_feedback_summary">Sonido estéreo que ayuda a encontrar el objetivo</string>
+    <string name="doppler_title">Sonido post-disparo</string>
+    <string name="doppler_summary">Se reproducirá un sonido tras realizar un lanzamiento</string>
+    <string name="profileA_title">Perfil A</string>
+    <string name="profileA_summary"> Habilita efectos de sonido para encontrar el objetivo, sonido estéreo que ayuda a encontrar
+    							 el objetivo y disminución progresiva del volumen cuando se lanza la pelota </string>
+    <string name="profileB_title">Perfil B</string>
+    <string name="profileB_summary">Habilita efectos de sonido para encontrar el objetivo, lanzamiento mediante evento de arrastre (como un tirachinas),
+    								efecto de vibración para ayudar a encontrar la localización del objetivo y disminución progresiva del volumen cuando se lanza la pelota</string>
+    <string name="transcription_title">Modo onomatopeyas</string>
+    <string name="transcription_summary">Muestra el texto del sonido que reproduce el sintetizador</string>
+    <string name="blind_interaction_title">Modo de interacción para ciegos</string>
+    <string name="blind_interaction_summary">Añade una pulsación más a todos los eventos táctiles en pantalla</string>
+    <string name="blind_mode_title">Modo pantalla negra</string>
+    <string name="blind_mode_summary">Permite usar la aplicación sin ninguna referencia visual en el menú principal y en el juego.</string>
+    <string name="game_title">Juego</string>
+    <string name="flags_title">Ajuste de banderas</string>
+    <string name="flags_shortcut">f</string>
+    <string name="instructions_label">Instrucciones</string>
+    <string name="instructions_title">Como configurar Golf Accesible</string>
+    <string name="instructions_general_label">Como configurar este juego</string>
+    <string name="instructions_controls_label">Como usar este juego</string>
+    <string name="instructions_general_text">¡Simplemente tiene que pulsar y disparar dentro del área de tiro!. Este área se 
+    encuentra en la parte inferior de la pantalla. No se preocupe si no encuentra el área de tiro, o falla al disparar.
+     Cualquier gesto de arrastre o pulsación fuera del área de tiro reproduce un ligero pitido.</string>
+    <string name="instructions_controls_text">Dentro de la configuración se puede seleccionar entre las siguientes opciones:\n
+		1 - Modo tirachinas habilita el tipo de lanzami. Puedes distinguir dos tipos de lanzamiento, tirachinas y fling. Este
+		último es el que está habilitado por defecto y permite realizar el lanzamiento mediante un rápido movimiento de scroll sobre el area de tiro.
+		El primero tirachinas tienes que pulsar sobre el área de tiro, arrastrar y levantar el dedo. Siempre dentro del área de tiro. \n
+		2 - Información de objetivo permite buscar el hoyo mediante pulsaciones y eventos de arrastre en la pantalla.\n
+		3 - Sonido post-disparo habilita la reproducción de un sonido durante un lanzamiento.\n
+		4 - Vibración y sonido - Antes de lanzar la pelota se producirá un evento de sonido o vibración para orientarle de la situación del hoyo.
+		Para utilizarlos tienes que describir dentro de la zona de tiro un arco mediante arrastre de tu dedo por la pantalla. 
+		Aquella posición donde veas que vibra o se emite el sonido con mayor intensidad será la mejor posición para realizar un
+		 disparo en sentido vertical, mediante uno de los movimientos que se explicaronanteriormente. Además en el caso del sonido, si la posición
+		 si llevas auriculares se emitirá sólo por un auricular. Esto indicará que la mejor posición está a la izquierda o a la derecha desde el 
+		 punto en el que estás describiendo el arco\n
+		Si necesitas más información puedes utilizar el tutorial.
+	</string>
+    <string name="synthetizer_title">Sintetizador</string>
+        <string name="synthesizer_suggestion">Le recomendamos descargar el sintetizador "IVONA Text-to-Speech HQ"</string>
+    <string name="onup_title">Evento tirachinas</string>
+    <string name="onup_summary">Habilita el lanzamiento mediante evento de arrastre (como un tirachinas)</string>
+    <string name="volume_up">Subir volumen</string>
+    <string name="volume_down">Bajar volumen</string>
+    <string name="home">Inicio</string>
+    <string name="back">Atrás</string>
+    <string name="options">Opciones</string>
+    <string name="search">Buscar</string>
+    <string name="alert_dialog_modes_TTStext">Diálogo de selección de modo</string>
+    <string name="alert_dialog_instructions_TTStext">Diálogo</string>
+    <string name="main_menu_initial_TTStext">Menú principal</string>
+    <string name="settings_menu_initial_TTStext">Menú de ajustes. 
+			    Pulsando en cualquiera de las opciones mostradas a lo largo de la pantalla puede activar o desactivar 
+			    una configuración. Al tiempo que activa o desactiva puede leer su descripción para conocer la función que
+			    lleva a cabo en la aplicación. En particular en este menú existen dos opciones: perfil A y perfil B. Estos perfiles habilitan y 
+			    deshabilitan un conjunto de opciones, idóneos para jugar. Por otro lado también se pueden habilitar todas las opciones por separado independientemente
+			    de los perfiles.
+			    Tiene las siguientes opciones dentro de este menu\: 
+	</string>
+    <string name="game_initial_TTStext">¡El juego ha comenzado!</string>
+    <string name="game_initial_stage_TTStext">¡El juego ha comenzado! Hoyo 1</string>
+    <string name="coordinates_information_button_TTStext">Posición</string>
+    <string name="key_configuration_menu_initial_TTStext">
+				Configuración de teclado. Mediante taps a su izquierda puede escuchar
+			    las descripciones de las acciones, a su derecha puede cambiar la tecla relacionada
+				con la acción de la izquierda. Si está en modo de interacción para ciegos el cambio de configuración asociada a una tecla
+				será mediante una pulsación larga, sino mediante pulsación simple. En total se tienen las siguiente opciones\: 
+    </string> 
+    <string name="keydialog">Configuración de acción</string>
+    <string name="keydialog_text">Pulse cualquier tecla</string>
+    <string name="button_speak_record">Mostrar record durante el juego</string>
+    <string name="button_repeat">Repite el último mensaje reproducido por el sintetizador de voz</string>
+    <string name="StageMode">Modo 18 hoyos</string>
+    <string name="FreeMode">Modo libre</string>
+    <string name="Yes">Sí</string>
+    <string name="No">No</string>
+    <string name="new_game_dialog_title">Selección de modo</string>
+    <string name="recordSpeech">Su record actual es</string>
+    <string name="counterSpeech">Su contador actual es</string>
+    <string name="newRecordSpeech">¡Nuevo record!</string>
+    <string name="EndingDialogTitle">Ronda completada</string>
+    <string name="EndingPositiveButtonLabel">Ok</string>
+    <string name="EndingPositiveButtonLabelSpeech">Presione ok para volver al menú principal</string>
+    <string name="alertOutsideShotArea">Se encuentra fuera de la zona de tiro. Para poder realizar el lanzamiento completa el gesto dentro de la zona inferior de la pantalla.</string>
+    <string name="ranking_title">Tiempo, fecha y record.</string>
+    <string name="ranking_speech">Ranking de juegos anteriores. Puede escuchar su contenido haciendo click en cada celda.</string>
+    <string name="instructions_dialog_select">Seleccione configuración o uso del juego.</string>
+    <string name="game_dialog_select">Seleccione dificultad</string>
+    <string name="initial_settings">Presione cualquier opción</string>
+    <string name="key_conf_fail">No es una tecla válida</string>  
+    <string name="key_conf_success">Ha cambiado la tecla asociada a</string>
+    <string name="stage_speech">Hoyo número</string>  
+
+    <!-- =============================== -->
+    <!--           TUTORIAL  			 -->
+    <!-- =============================== -->    
+    
+    <!-- TUTORIAL -->
+    <string name="tutorial_step0_dialog_select">En este tutorial aprenderá lo básico de Golf. El juego consiste en lograr la máxima puntuación. Para ello deberá acertar el lanzamiento al hoyo.
+        Para lanzar la pelota dispone de un área de lanzamiento en la parte inferior de la pantalla. Cuando se salga de este área, oirá un pitido de notificación. Tenemos dos modos de juego, 
+        el modo libre, en el que podrá practicar tantos lanzamientos como desee y el modo 18 hoyos, en el que se hará un recuento de la puntuación sobre 18 hoyos. Para conocer su puntuación, dispone
+        de un marcador en el borde izquierdo de la pantalla a la altura de la zona de lanzamiento. Si realiza una pulsación sobre éste, se le notificará la puntuación acumulada hasta el momento.</string>
+    <string name="tutorial_step1_dialog_select">Todas las características mostradas en este tutorial se pueden activar/desactivar en configuración. El tutorial comienza! Recuerde que para disparar debe
+        colocarse en la zona de tiro situada en la parte inferior de la pantalla y realizar un fling, es decir un gesto de scroll rápido hacia la dirección que desee disparar.</string>
+    <string name="tutorial_step2_dialog_select">Ese modo de lanzamiento es el establecido por defecto. Cada vez que se acierta un lanzamiento
+        el objetivo cambia de posición.</string>
+    <string name="tutorial_step3_dialog_select">Puedes cambiar el modo a on Up. Para disparar arrastra y levanta el dedo</string>
+    <string name="tutorial_step4_dialog_select">La opción pista para encontrar el objetivo, te permite localizar el objetivo mediante pulsaciones y eventos de arrastre.
+  	    Prueba a encontrarlo.</string>
+    <string name="tutorial_step5_dialog_select">Este sonido es el que se emite cuando encuentras el objetivo</string>
+    <string name="tutorial_step6_dialog_select">Las siguientes opciones te indican qué dirección para tu lanzamiento puede ser la mejor.
+    La vibración te da una pista de por dónde está el objetivo. Para utilizarla basta con describir un arco en la zona de tiro en la parte inferior de la pantalla. 
+    La posición donde vibra el dispositivo indica la mejor dirección para realizar el disparo. 
+    Una vez haya encontrado una buena posición dentro del arco, trate de hacer el gesto de tiro que corresponda hacia abajo desde esa posición.</string>
+    <string name="tutorial_step7_dialog_select">Pistas con efectos de sonido, también es una ayuda para localizar el objetivo en el lanzamiento. 
+    Nuevamente describiendo un arco en la zona de tiro en la parte inferior de la pantalla. 
+    Si cuando estamos describiendo el arco del tiro escuchamos un sonido de mayor volumen quiere decir que es la mejor posición para realizar su disparo.
+    Una vez has encontrado una buena posición dentro del arco, trata de hacer el gesto de tiro que corresponda hacía abajo desde esa posición</string>
+    <string name="tutorial_step8_dialog_select">Cuanto más grave sea el pitido emitido en caso de fallo, más lejos se encuentra del objetivo. Si logra acertar el lanzamiento oirá un aplauso.</string>
+    <string name="tutorial_step9_dialog_select">El tutorial acaba aquí.</string> 
+    
+    <!-- =============================== -->
+    <!--           ONOMATOPEYAS			 -->
+    <!-- =============================== -->    
+    <string name="bing_ono"> - bing bing! - </string>    
+    <string name="bip_ono"> - Bip bip! -</string>    
+    <string name="clue_feed_back_sound_ono"> - Ring! - </string>    
+    <string name="hit_ball_ono"> - Tip! - </string>    
+    <string name="left_ono"> - Biiiip! - </string>    
+    <string name="main_ono">Reproduciendo \' Deliberate thought \'</string>    
+    <string name="missed_ono">biiiip!</string>    
+    <string name="previous_shoot_feedback_sound_ono"> - Sonar - </string>    
+    <string name="right_ono"> - biiiip! - </string>    
+    <string name="sound_shot_ono"> - Toc! - </string>    
+    <string name="storm_ono"> - Viento - </string>    
+    <string name="air_plane_bing"> - Pim - </string>    
+    <string name="win_sound_ono"> - Aplausos - </string>     
+     <string name="sling">tuuumm</string> 
+    
+    <string name="disabled">Desactivada</string>
+    <string name="enabled">Activada</string>
+
+	<string name="infoKeyConf">asociada a</string>
+    <string name="infoKeyConffail">asociada a ninguna tecla.</string>
+    
+    <string name="scoreboard_success">Su puntuación se ha incrementado hasta </string>
+    <string name="scoreboard_fail">Su puntuación ha disminuido hasta </string>
+    <string name="scoreboard_reset">El número de lanzamientos consecutivos es cero.</string>
+     <string name="scoreboard_free_mode">El número de lanzamientos consecutivos es </string>
+    
+    <!-- =============================== -->
+    <!--           FORMULARIOS 			 -->
+    <!-- =============================== -->    
+    
+    <string name= "form_instructions1"> Puede navegar a través de este menú, haciendo long click sobre los botones siguiente y anterior, situados debajo
+    		de cada conjunto de posibles respuestas, o de cada texto. Si se realiza un click se leerá la opción. Importante, la opción que se clickee la última vez será la seleccionada. 
+	</string>
+	<string name= "form_instructions2">En este caso, si quiere, puede rellenar un campo de texto con su opinión sobre la aplicación.</string>
+	<string name= "form_instructions3">De ahora en adelante, tiene varias opciones para responder a cada pregunta. Haga click sobre la opción para seleccionarla.</string>
+	<string name= "form_instructions4"> Tiene que rellenar este campo con su opinión sobre la aplicación.</string>
+	<string name="form_intro">Esto es un proyecto de investigación que trata de obtener una visión sobre cómo las personas con discapacidad visual pueden
+        jugar a juegos en dispositivos móviles y cómo los desarrolladores pueden crear juegos que no son sólo accesibles,
+        sino también agradables para ellos. Para cumplir estos objetivos, nos gustaría conocer algunos detalles acerca de usted 
+        y de cómo interactúa con las tecnologías en general y los juegos en particular. Esto nos ayudará a interpretar sus respuestas
+        a este cuestionario. Toda la información recopilada a través de este cuestionario será anónima, serán tratados de forma 
+        confidencial y sólo se utilizarán con el único propósito del estudio. \n</string>
+    <string name="q1_context">Marque la opción que mejor describe su nivel visual actual</string>
+    <string name="q2_context">¿Cuánto tiempo suele dedicar a jugar con ordenador o consola?. Donde 1 significa "Nunca" y 5 "Muy a menudo"</string>
+    <string name="q3_context">¿Cuánto tiempo suele dedicar a jugar con dispositivos móviles (móvil o tableta)?. Donde 1 significa "Nunca" y 5 "Muy a menudo"</string>
+    <string name="q4_context">¿Cuánto le ha costado aprender a jugar?. Donde 1 significa "Muy difícil" y 5 "Muy fácil".</string>
+    <string name="q5_context">¿Cómo de divertida le ha parecido la experiencia de juego?. Donde 1 significa "Muy aburrido" y 5 "Muy divertido".</string>
+    <string name="q6_context">¿Cómo de entretenida le ha resultado el juego?. Donde 1 significa "poco entretenido" y 5 "muy entretenido".</string>
+    <string name="q7_context">¿Le parece cómoda la interacción con el dispositivo?. Donde 1 significa "incómodo" y 5 "muy cómodo".</string>
+    <string name="q8_context">Evalúe la historia (si es aplicable). Donde 1 significa "No me ha gustado mucho" y 5 "Me ha gustado mucho".</string>
+    <string name="q9_context">Evalúe la accesibilidad y los ajustes de control. Donde 1 significa "No me ha gustado mucho" y 5 "Me ha gustado mucho".</string>
+    <string name="q10_context">Evalúe la retroalimentación proporcionada en el juego.Donde 1 significa "No me ha gustado mucho" y 5 "Me ha gustado mucho".</string>
+    <string name="q11_context">Finalmente, proporcione algunos comentarios o sugerencias para mejorar el juego. Después pulse el botón finalizar
+        para mandarnos las respuestas y ¡esto es todo!.</string>
+    <string name="radio11">Soy ciego</string>
+    <string name="radio12">Mi visión está limitada</string>
+    <string name="radio13">No tengo discapacidad visual</string>
+    <string name="one_context">1</string>
+    <string name="two_context">2</string>
+    <string name="three_context">3</string>
+    <string name="four_context">4</string>
+    <string name="five_context">5</string>
+    <string name="na">NA</string>
+    <string name="next_context">Siguiente</string>
+    <string name="previous_context">Previa</string>
+    <string name="finish_context">Finalizar</string>
+    <string name="action_form">Has seleccionado</string>
+    
+    <!-- =============================== -->
+    <!--           OTRAS	  			 -->
+    <!-- =============================== -->        
+    
+	<string name="screen_off_message">Su pantalla se ha apagado.</string>
+    <string name="screen_on_message">Su pantalla se ha encendido. Tal vez tenga que desbloquear su dispositivo.</string>
+    <string name="load_text">Enviando información... Por favor espere</string>
+</resources>

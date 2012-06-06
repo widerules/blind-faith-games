@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Blind Faith Games is a research project of the e-UCM
+            research group, developed by Gloria Pozuelo and Javier Álvarez, 
+            under supervision by Baltasar Fernández-Manjón and Javier Torrente.
+     
+      Copyright 2011-2012 e-UCM research group.
+    
+       e-UCM is a research group of the Department of Software Engineering
+            and Artificial Intelligence at the Complutense University of Madrid
+            (School of Computer Science).
+    
+            C Profesor Jose Garcia Santesmases sn,
+            28040 Madrid (Madrid), Spain.
+    
+            For more info please visit:  <http://blind-faith-games.e-ucm.es> or
+            <http://www.e-ucm.es>
+    
+    ****************************************************************************
+  	  This file is part of EYES-FREE MINESWEEPER, developed in the Blind Faith Games project.
+   
+         EYES-FREE MINESWEEPER, is free software: you can redistribute it and/or modify
+        it under the terms of the GNU Lesser General Public License as published by
+        the Free Software Foundation, either version 3 of the License, or
+        (at your option) any later version.
+    
+        EYES-FREE MINESWEEPER is distributed in the hope that it will be useful,
+        but WITHOUT ANY WARRANTY; without even the implied warranty of
+        MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+        GNU Lesser General Public License for more details.
+    
+        You should have received a copy of the GNU Lesser General Public License
+        along with Adventure.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:shrinkColumns="1"
+    android:stretchColumns="2">
+
+    <TableRow 
+    	android:id="@+id/zoom_row"
+    	android:contentDescription="@string/action_zoom">
+        <TextView
+            android:layout_column="1"
+            android:text="@string/action_zoom"
+            android:padding="3dip" />
+	    <Button 
+	        android:id="@+id/buttonZoom"
+	        android:layout_width="fill_parent"
+	        android:text="@string/action_zoom"
+	        android:layout_height="wrap_content"
+	        android:contentDescription="@string/button_zoom"/>
+    </TableRow>
+
+    <View
+        android:layout_height="2dip"
+        android:background="#FF909090" />
+
+    <TableRow
+    	android:id="@+id/exploration_row"
+    	android:contentDescription="@string/action_exploration">
+        <TextView
+            android:layout_column="1"
+            android:text="@string/action_exploration"
+            android:padding="3dip" />
+	    <Button 
+	        android:id="@+id/buttonExploration"
+	        android:layout_width="fill_parent"
+	        android:text="@string/action_exploration"
+	        android:layout_height="wrap_content"
+	        android:contentDescription="@string/button_exploration"/>
+    </TableRow>
+
+    <View
+        android:layout_height="2dip"
+        android:background="#FF909090" />
+
+    <TableRow
+    	android:id="@+id/instructions_row"
+    	android:contentDescription="@string/action_instructions">
+        <TextView
+            android:layout_column="1"
+            android:text="@string/action_instructions"
+            android:padding="3dip" />
+	    <Button 
+	        android:id="@+id/buttonInstructions"
+	        android:layout_width="fill_parent"
+	        android:text="@string/action_instructions"
+	        android:layout_height="wrap_content"
+	        android:contentDescription="@string/button_instr"/>
+    </TableRow>
+    
+     <View
+	     android:layout_height="2dip"
+	     android:background="#FF909090" />
+    
+     <TableRow 	
+     	android:id="@+id/coordinates_row"
+    	android:contentDescription="@string/action_coordinates">
+        <TextView
+            android:layout_column="1"
+            android:text="@string/action_coordinates"
+            android:padding="3dip" />
+	    <Button
+	        android:id="@+id/buttonCoordinates"
+	        android:layout_width="fill_parent"
+	        android:text="@string/action_coordinates"
+	        android:layout_height="wrap_content"
+	        android:contentDescription="@string/button_coord" />
+    </TableRow>
+    
+    <View
+	     android:layout_height="2dip"
+	     android:background="#FF909090" />
+    
+     <TableRow
+    	android:id="@+id/context_row"
+    	android:contentDescription="@string/action_context">
+        <TextView
+            android:layout_column="1"
+            android:text="@string/action_context"
+            android:padding="3dip" />
+	    <Button
+	        android:id="@+id/buttonContext"
+	        android:layout_width="fill_parent"
+	        android:text="@string/action_context"
+	        android:layout_height="wrap_content"
+	        android:contentDescription="@string/button_context" />
+    </TableRow>
+    
+     <View
+	     android:layout_height="2dip"
+	     android:background="#FF909090" />
+    
+     <TableRow    	
+     	android:id="@+id/repeat_row"
+    	android:contentDescription="@string/action_repeat">
+        <TextView
+            android:layout_column="1"
+            android:text="@string/action_repeat"
+            android:padding="5dip" />
+	    <Button
+	        android:id="@+id/buttonRepeat"
+	        android:layout_width="fill_parent"
+	        android:text="@string/action_repeat"
+	        android:layout_height="wrap_content"
+	        android:contentDescription="@string/button_repeat" />
+    </TableRow>
+
+</TableLayout>

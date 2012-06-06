@@ -1,0 +1,1186 @@
+	<!-- Vecino sin tarjeta sombrero -->
+		<!-- FIN -->
+	<!-- Vecino con tarjeta sombrero -->
+	<!--  Club de Alterne sin sombrero --> <!-- se podía pero se supone que no sacabas nada en claro, si quieres se quita -->
+ 		<!-- Conversación Barman -->
+		<!-- Conversación Camarera -->
+		<!-- Conversación Borracho -->
+		
+	<!-- Joyería (si cogimos collar) → nos dan la foto -->	
+		<!-- Club de alterne con sombrero -->	
+			<!-- Conversación Barman -->
+				<!-- Muerte si enseñamos foto -->
+			<!-- Conversación Camarera -->
+				<!-- Enseñar foto -->
+					<!-- Si cogimos papel con tlfno del muerto -->
+						<!-- Hotel -->
+							<!-- Sacar pistola -->
+							<!-- Apagar luz -->
+							<!-- Huir por la ventana -->
+					<!-- Volver a la habitación para seguir investigando -->
+			<!-- Conversación Borracho -->
+
+<sceneManager>
+
+	<!--..... Escena 0 ........-->
+	
+	<scene type="normal" id = "0">
+		
+		<introMessage>La historia comienza en un oscuro despacho de los bajos fondos de Sewer City. 
+		    John Tidiac antiguo miembro de la policía se encuentra descansando en su despacho cuando llaman a la puerta.</introMessage>
+		
+		<description>Despacho de J.T.</description>
+		
+		<nextScenes>
+			<idNextScenes id = "1"/>
+ 			<idNextScenes id = "2"/> 
+		</nextScenes>
+		
+		<transitionCondition></transitionCondition>
+		
+		<endCondition></endCondition>
+	</scene>
+	
+	<scene type="normal" id = "1">
+		<npc name = "Preguntar por la familia">
+			<dialog>
+				<answer author = "John T.">Hey, ¿Cómo va todo viejo zorro? ¿Qué tal el pequeño Tim?</answer>
+				<answer author = "McNulty">¡Cuánto tiempo colega!Bien, el chaval está creciendo a pasos agigantados. 
+				    La verdad, es que estamos todos bien, no me puedo quejar. Pero dime, ¿qué es de tu vida? No sé nada de ti, 
+				    desde que te echaron.</answer>
+				<answer author = "John T.">Sí..bueno, la verdad es que he andado bastante liado desde el incidente.</answer>
+				<answer author = "McNulty">¡Venga ya!Estás de broma...</answer>
+				<answer author = "John T.">Bueno vale, desde que me echaron, me he encerrado en este cuchitril y me he dedicado
+			    	a emborracharme ¡¿y qué?! ya todo da igual...</answer>	    
+			</dialog>
+		</npc>
+	
+		<npc name = "Preguntar que le trae por aquí" transition = "true">
+			<dialog>
+				<answer author = "McNulty">Vengo a darte buenas noticias. Necesito que me ayudes con un caso, que me 
+				    tiene bastante intrigado. A pesar de los problemas que tuviste en el departamento sé que eres un gran profesional.
+				    Además, puedes aprovechar la oportunidad para recuperar tu reputación en el cuerpo de policía. ¡Qué sepan de 
+				    qué leña estás hecho!</answer>			
+				<answer author = "John T.">Pues...deja que consulte mi agenda.....¡Ajá! Como pensaba estoy libre (risa)</answer>
+				<answer author = "McNulty">Veo que no has perdido el humor. Entonces quedamos en la Plaza Altuna en un par de horas.
+				    ¿Correcto?</answer>	
+				<answer author = "John T.">¡Hecho!</answer>	
+			</dialog>
+		</npc>
+		
+		<introMessage>Se trata de tu viejo compañero Jim McNutty, que...</introMessage>
+		
+		<description>Abrir la puerta</description>
+		
+		<nextScenes>
+			<idNextScenes id = "3"/>
+		</nextScenes>
+		
+		<transitionCondition></transitionCondition>
+		
+		<endCondition>
+			<idEndCondition id = "3"/> 
+		</endCondition>
+	</scene>
+	
+ 	<scene type="normal" id = "2"> -->
+		<npc name = "Preguntar por la familia">
+			<dialog>
+				<answer author = "John T.">Hey, ¿Cómo va todo viejo zorro? ¿Qué tal el pequeño Tim?</answer>
+				<answer author = "McNulty">¡Cuánto tiempo colega!Bien, el chaval está creciendo a pasos agigantados. 
+				    La verdad, es que estamos todos bien, no me puedo quejar. Pero dime, ¿qué es de tu vida? No sé nada de ti, 
+				    desde que te echaron.</answer>
+				<answer author = "John T.">Sí..bueno, la verdad es que he andado bastante liado desde el incidente.</answer>
+				<answer author = "McNulty">¡Venga ya!Estás de broma...</answer>
+				<answer author = "John T.">Bueno vale, desde que me echaron, me he encerrado en este cuchitril y me he dedicado
+			    	a emborracharme ¡¿y qué?! ya todo da igual...</answer>	    
+			</dialog>
+		</npc>
+		
+		<npc name = "Rememorar viejos tiempos">
+			<dialog>
+				<answer author = "John T.">Ah, recuerdas los viejos tiempos cuando trabajabamos para resolver casos en homicidios,
+					en aquellos tiempos un detective podía hacer su labor sin verse comprometido.</answer>
+				<answer author = "McNulty">Vaya que sí John, vaya que sí. Recuerdas el caso aquel del carnicero de la bahía.</answer>
+				<answer author = "John T.">Sí, lo que costó descubrirle y poder disponer de los medios para atraparlo. 
+					Menuda pieza más de 30 cadaveres descuartizados tirados en una fosa dentro de la bahía menuda pieza.</answer>
+			</dialog>
+		</npc>
+		
+		<npc name = "Recomendarle utilizar formas más sutiles de entrar">
+			<dialog>
+				<answer author = "John T.">Podrías tener cuidado, con lo poco que me queda maldito saco de basura desagradecido.</answer>
+				<answer author = "McNulty">Llevo días llamando, y no contestaste así que... </answer>
+				<answer author = "John T.">Así que pensaste ¿por qué no romper las pocas pertenencias 
+					que le quedan a mi antiguo compañero?</answer>
+				<answer author = "McNulty">Veo que sigues igual que siempre.</answer>
+			</dialog>
+		</npc>
+		
+		<npc name = "Preguntar que le trae por aquí" transition = "true">
+			<dialog>
+				<answer author = "McNulty">Vengo a darte buenas noticias. Necesito que me ayudes con un caso, que me 
+				    tiene bastante intrigado. A pesar de los problemas que tuviste en el departamento sé que eres un gran profesional.
+				    Además, puedes aprovechar la oportunidad para recuperar tu reputación en el cuerpo de policía. ¡Qué sepan de 
+				    qué leña estás hecho!</answer>			
+				<answer author = "John T.">Pues...deja que consulte mi agenda.....¡Ajá! Como pensaba estoy libre (risa)</answer>
+				<answer author = "McNulty">Veo que no has perdido el humor. Entonces quedamos en la Plaza Altuna en un par de horas.
+				    ¿Correcto?</answer>	
+				<answer author = "John T.">¡Hecho!</answer>	
+			</dialog>
+		</npc>
+	
+		<introMessage>Oyes el ruido de un cristal romperse, parece que tu viejo compañero Jim McNulty 
+			sigue con el mismo humor de siempre y decidió entrar por su cuenta en tu despacho.</introMessage>
+
+		<description>Ignorar</description> 
+		
+ 		<nextScenes> 
+ 			<idNextScenes id = "3"/> 
+ 		</nextScenes> 
+		
+		<transitionCondition></transitionCondition> 
+		
+ 		<endCondition>
+ 			<idEndCondition id = "3"/> 
+ 		</endCondition> 
+ 	</scene> 
+	
+<!--............................. Escena 1 Llegada lugar crimen ........................................-->
+	<scene type="normal" id = "3">
+
+		<introMessage>Tal y como me dijo McNulty, me dirigí hacia la Plaza Altuna, donde éste me esperaba para acompañarme 
+		    a la escena del crimen. Nos dirigimos a un apartamento situado en la calle Smuff. Al llegar la puerta se encontraba abierta. 
+			Se trataba de un homicidio, el cuerpo se hallaba al lado de la cama.</introMessage>
+		
+		<description>Escena del crimen</description>
+		
+		<nextScenes>
+			<idNextScenes id = "4"/>
+			<idNextScenes id = "5"/>
+			<idNextScenes id = "6"/>
+			<idNextScenes id = "7"/>
+			<idNextScenes id = "10"/>
+			<idNextScenes id = "18"/>
+		</nextScenes>
+		
+		<transitionCondition></transitionCondition>
+		
+		<endCondition>			
+			<idEndCondition id = "20"/>
+		</endCondition>
+	</scene>
+	
+	<!--..................................Conversación con Policía de guardia en la escena........................................-->
+	<scene type="normal" id = "4">
+		<npc name = "Preguntar por lo sucedido">
+			<dialog>
+				<answer author = "John T.">¿Qué ha pasado aquí?</answer>
+				<answer author = "Policía">La verdad es que hemos estado investigando, preguntando a gente de los alrededores que haya podido
+				    ver u oído algo, pero nadie sabe nada. Es como si hubiera sido un asesinato fantasma.</answer>
+				<answer author = "John T.">Vaya cuerpo de policía más incompetente...</answer>				    
+			</dialog>
+		</npc>
+		
+		<npc name = "Pedirle su identificación">
+			<dialog>
+				<answer author = "John T.">¿Podría enseñarme su identificación?.</answer>
+				<answer author = "Policía">Por supuesto, aquí la tiene.</answer>
+				<answer author = "John T.">Bonita placa. ¿Qué hace aquí parado? ¡Busque información! ¡Algo que pueda sernos útil!.</answer>
+				<answer author = "Policía">A callar.</answer>
+			</dialog>
+		</npc>
+		
+		<npc name = "Despedirse" transition = "true">
+			<dialog>
+				<answer author = "John T.">Ha sido un placer haberle conocido.</answer>
+				<answer author = "Policía">No sé si decir lo mismo por mi parte.</answer>
+			</dialog>
+		</npc>
+
+		<introMessage>Parecía un policía de la vieja guardia, de la generación de McNulty</introMessage>
+		
+		<description>Hablar Policía de guardia</description>
+		
+		<nextScenes>
+			<idNextScenes id = "3"/>
+		</nextScenes>
+		
+		<transitionCondition></transitionCondition>
+		
+		<endCondition>
+			<idEndCondition id = "3"/>
+		</endCondition>
+    </scene>
+	
+	 <!--..................................Conversación con McNulty .......................................-->
+	 <scene type="normal" id = "5">
+		
+		<npc name = "Preguntar por la investigación" transition = "true">
+			<dialog>
+				<answer author = "McNulty">Vaya, parece ser que alguien no se llevaba bien con este tío. Por cierto, no hace falta decirte
+				    que te sientas libre de examinar lo que quieras, este es caso es tuyo.</answer>
+				<answer author = "John T.">Perfecto, veamos qué podemos encontrar. Estaré por aquí si me necesitas</answer>				    
+			</dialog>
+		</npc>
+		
+		<introMessage>Hacía años que no veías a tu antiguo compañero y decides saludarle.</introMessage>
+		
+		<description>Hablar con McNulty</description>
+		
+		<nextScenes>
+			<idNextScenes id = "3"/>
+		</nextScenes>
+		
+		<transitionCondition></transitionCondition>
+		
+		<endCondition>
+			<idEndCondition id = "3"/>
+		</endCondition>
+	</scene>
+	
+	<!--..................................Conversación con Vecina en la puerta del piso .......................................-->
+	<scene type="normal" id = "6">
+		<npc name = "Preguntarle por lo sucedido" transition = "true">
+			<dialog>
+				<answer author = "John T.">¿Oyó algo fuera de lo común ayer por la noche?</answer>
+				<answer author = "Vecina">¿Eh? Ah, sí, sí..Yo, bueno, no, creo que no...Disculpe.</answer>
+			</dialog>
+		</npc>
+
+		<introMessage>Parece la típica vecina entrometida.</introMessage>
+		
+		<description>Hablar con Vecina cotilla</description>
+		
+		<nextScenes>
+			<idNextScenes id = "3"/>
+		</nextScenes>
+		
+		<transitionCondition></transitionCondition>
+		
+		<endCondition>
+			<idEndCondition id = "3"/>
+		</endCondition>
+	</scene>
+
+	<!-- .................... Entramos en la habitación por la que huyó el criminal ............................ -->
+	<scene type="normal" id = "7">
+		
+		
+		<introMessage>Parece que el asesino entró por aquí.</introMessage>
+		
+		<description>Entrar en el baño</description>
+		
+		<nextScenes>
+			<idNextScenes id = "8"/>
+			<idNextScenes id = "9"/>
+			<idNextScenes id = "3"/>
+		</nextScenes>
+		
+		<transitionCondition></transitionCondition>
+		
+		<endCondition>
+			<idEndCondition id = "3"/>
+		</endCondition>
+	</scene>
+	
+	<scene type="normal" id = "8">
+		
+		<introMessage>Parece que el asesino huyó por aquí...</introMessage>
+		
+		<description>Examinar ventana rota</description>
+		
+		<nextScenes>
+			<idNextScenes id = "7"/>
+		</nextScenes>
+		
+		<transitionCondition></transitionCondition>
+		
+		<endCondition>
+			<idEndCondition id = "7"/>
+		</endCondition>
+	</scene>
+	
+	<scene type="normal" id = "9">
+		
+		<introMessage>Parece que hay algo dentro. Es una tarjeta de un club de alterne. La guardaré
+				    por si acaso.</introMessage>
+		
+		<description>Examinar sombrero</description>
+		
+		<nextScenes>
+			<idNextScenes id = "7"/>
+			<idNextScenes id = "19"/>
+		</nextScenes>
+		
+		<transitionCondition></transitionCondition>
+		
+		<endCondition>
+			<idEndCondition id = "7"/>
+		</endCondition>
+	</scene>
+
+	<!-- .................... Entramos en la habitación donde se encuentra el cádaver ............................ -->
+	<scene type="normal" id = "10">
+
+		<introMessage>Esto está hecho un desastre. A ver qué encontramos por aquí</introMessage>
+		
+		<description>Entrar en la habitación donde se encontró el cádaver</description>
+		
+		<nextScenes>
+			<idNextScenes id = "11"/>
+			<idNextScenes id = "12"/>
+			<idNextScenes id = "13"/>
+			<idNextScenes id = "14"/>
+			<idNextScenes id = "15"/>
+			<idNextScenes id = "3"/>
+		</nextScenes>
+		
+		<transitionCondition></transitionCondition>
+		
+		<endCondition>
+			<idEndCondition id = "3"/>
+		</endCondition>
+	</scene>
+	
+	<scene type="normal" id = "11">
+
+		<introMessage>No parece haber nada sospechoso.</introMessage>
+		
+		<description>Cama deshecha</description>
+		
+		<nextScenes>
+			<idNextScenes id = "10"/>
+		</nextScenes>
+		
+		<transitionCondition></transitionCondition>
+		
+		<endCondition>
+			<idEndCondition id = "10"/>
+		</endCondition>
+	</scene>
+	
+	<scene type="normal" id = "12">
+		<introMessage>¡Wow! Yo leí este libro hace un tiempo y era buenísimo.</introMessage>
+		
+		<description>Examinar libro</description>
+		
+		<nextScenes>
+			<idNextScenes id = "10"/>
+		</nextScenes>
+		
+		<transitionCondition></transitionCondition>
+		
+		<endCondition>
+			<idEndCondition id = "10"/>
+		</endCondition>
+		
+	</scene>
+	
+	<scene type="normal" id = "13">
+
+		<introMessage>Por el rastro de sangre parece que intentaron mover el cuerpo...Imagino que al estar
+				    tan gordo no pudo con él.</introMessage>
+		
+		<description>Examinar sangre</description>
+		
+		<nextScenes>
+			<idNextScenes id = "10"/>
+		</nextScenes>
+		
+		<transitionCondition></transitionCondition>
+		
+		<endCondition>
+			<idEndCondition id = "10"/>
+		</endCondition>
+	</scene>
+	
+	<scene type="normal" id = "14">
+
+		<introMessage>Quizá pueda pasarme luego por la joyería a ver qué me cuentan de esta persona.</introMessage>
+		
+		<description>Examinar collar</description>
+		
+		<nextScenes>
+			<idNextScenes id = "10"/>
+			<idNextScenes id = "20"/>
+		</nextScenes>
+		
+		<transitionCondition></transitionCondition>
+		<endCondition>
+			<idEndCondition id = "10"/>
+		</endCondition>
+	</scene>
+
+<!-- .................... Examinar Cadáver ............................ -->
+
+	<scene type="normal" id = "15">
+
+		<introMessage>Parece que lleva muerto varias horas</introMessage>
+		
+		<description>Examinar cádaver</description>
+		
+		<nextScenes>
+			<idNextScenes id = "16"/>
+			<idNextScenes id = "17"/>
+			<idNextScenes id = "10"/>
+		</nextScenes>
+		
+		<transitionCondition></transitionCondition>
+		<endCondition>
+			<idEndCondition id = "10"/>
+		</endCondition>
+	</scene>
+	
+	<scene type="normal" id = "16">
+
+		<introMessage>Directo al entrecejo</introMessage>
+		
+		<description>Examinar tiro en la Cabeza</description>
+		
+		<nextScenes>
+			<idNextScenes id = "15"/>
+		</nextScenes>
+		
+		<transitionCondition></transitionCondition>
+		<endCondition>
+			<idEndCondition id = "15"/>
+		</endCondition>
+	</scene>
+	
+	<scene type="normal" id = "17">
+
+		<introMessage>Vaya, hay un número de teléfono. No parece relevante.</introMessage>
+		
+		<description>Examinar papel que sostiene el cádaver</description>
+		
+		<nextScenes>
+			<idNextScenes id = "15"/>
+		</nextScenes>
+		
+		<transitionCondition></transitionCondition>
+		<endCondition>
+			<idEndCondition id = "15"/>
+		</endCondition>
+	</scene>
+	
+<!-- .................... Hablar con el vecino Caso no sombrero no collar............................ -->
+
+	<scene type="normal" id = "18">
+	
+		<npc name = "Preguntar si oyó algo extraño">
+			<dialog>
+				<answer author="Vecino">Lo siento, pero no estuve anoche en mi casa, por lo que no puedo ayudarle con el caso.</answer>
+				<answer author = "John T.">Qué casualidad..</answer>
+			</dialog>
+		</npc>
+		<npc name = "Preguntar dónde estuvo anoche">
+			<dialog>
+				<answer author="Vecino">Anoche salí de fiesta con unos amigos</answer>
+				<answer author = "John T.">Unos de fiesta, mientras que otros luchan por no meter el pie en la tumba.</answer>
+			</dialog>
+		</npc>
+		<npc name = "Presionar" transition = "true">
+			<dialog>
+				<answer author="John T.">¿Podría decirme al menos si conocía a la persona asesinada?</answer>
+				<answer author="Vecino">Emm no, de hecho, no sé ni quién vive ahí.</answer>
+				<answer author="John T.">¿Es su vecino de enfrente y no conoce si quiera de vista a esa persona? Me está tomando el pelo, ¿verdad?</answer>
+				<answer author="Vecino">¡Le digo que no le conozco! ¡Y no debería meterse dónde no le llaman!</answer>
+			</dialog>
+		</npc>
+		
+		<introMessage>En la escena había un personaje sospechoso que John T. no pudo ignorar...</introMessage>
+		
+		<description>Hablar con Vecino</description>
+		
+		<nextScenes></nextScenes>
+		
+		<transitionCondition></transitionCondition>
+		
+		<endCondition>
+			<idEndCondition id = "3"/> 
+		</endCondition>
+	</scene>
+	
+<!-- .................... Escena del crimen tras visitar joyería........................... -->
+	<scene type="normal" id = "21">
+
+		<introMessage>Tras los hallazgos en la joyería volvieron a la escena del crimen</introMessage>
+		
+		<description>Escena del crimen</description>
+		
+		<nextScenes>
+			<idNextScenes id = "22"/>
+			<idNextScenes id = "23"/>
+			<idNextScenes id = "25"/>
+			<idNextScenes id = "28"/>
+			<idNextScenes id = "37"/>
+		</nextScenes>
+		
+		<transitionCondition></transitionCondition>
+		
+		<endCondition>			
+			<idEndCondition id = "41"/>
+		</endCondition>
+	</scene>
+	
+	<scene type="normal" id = "22">
+
+		<npc name = "Preguntar por lo sucedido">
+			<dialog>
+				<answer author = "John T.">¿Qué ha pasado aquí?</answer>
+				<answer author = "Policía">La verdad es que hemos estado investigando, preguntando a gente de los alrededores que haya podido
+				    ver u oído algo, pero nadie sabe nada. Es como si hubiera sido un asesinato fantasma.</answer>
+				<answer author = "John T.">Vaya cuerpo de policía más incompetente...</answer>				    
+			</dialog>
+		</npc>
+		
+		<npc name = "Pedirle su identificación">
+			<dialog>
+				<answer author = "John T.">¿Podría enseñarme su identificación?.</answer>
+				<answer author = "Policía">Por supuesto, aquí la tiene.</answer>
+				<answer author = "John T.">Bonita placa. ¿Qué hace aquí parado? ¡Busque información! ¡Algo que pueda sernos útil!.</answer>
+				<answer author = "Policía">A callar.</answer>
+			</dialog>
+		</npc>
+		
+		<npc name = "Despedirse" transition = "true">
+			<dialog>
+				<answer author = "John T.">Ha sido un placer haberle conocido.</answer>
+				<answer author = "Policía">No sé si decir lo mismo por mi parte.</answer>
+			</dialog>
+		</npc>
+
+		<introMessage>Parece que todavía continua el simpático policía por aquí</introMessage>
+		
+		<description>Hablar con policía de guardia</description>
+		
+		<nextScenes>
+			<idNextScenes id = "21"/>
+		</nextScenes>
+		
+		<transitionCondition></transitionCondition>
+		
+		<endCondition>
+			<idEndCondition id = "21"/>
+		</endCondition>
+	 </scene>
+	
+	<scene type="normal" id = "23">
+	
+		<npc name = "Hablar sobre los nuevos hallazgos" transition = "true">
+			<dialog>		    
+			</dialog>
+		</npc>
+
+		<introMessage>McNulty sigue por aquí, podría comentarle algo sobre mi visita a la joyería</introMessage>
+		
+		<description>Hablar con McNulty</description>
+		
+		<nextScenes>
+			<idNextScenes id = "21"/>
+		</nextScenes>
+		
+		<transitionCondition></transitionCondition>
+		
+		<endCondition>
+			<idEndCondition id = "21"/>
+		</endCondition>
+	</scene>
+
+	<!-- .................... Entramos en la habitación por la que huyó el criminal ............................ -->
+		
+	<scene type="normal" id = "25">
+	
+		<introMessage>Parece que el asesino entró por aquí</introMessage>
+		
+		<description>Entrar en el baño</description>
+		
+		<nextScenes>
+			<idNextScenes id = "26"/>
+			<idNextScenes id = "27"/>
+			<idNextScenes id = "21"/>
+		</nextScenes>
+		
+		<transitionCondition></transitionCondition>
+		
+		<endCondition>
+			<idEndCondition id = "21"/>
+		</endCondition>
+	</scene>
+	
+	<scene type="normal" id = "26">
+		
+		<introMessage>Parece que el asesino huyó por aquí...</introMessage>
+		
+		<description>Examinar ventana rota</description>
+		
+		<nextScenes>
+			<idNextScenes id = "25"/>
+		</nextScenes>
+		
+		<transitionCondition></transitionCondition>
+		
+		<endCondition>
+			<idEndCondition id = "25"/>
+		</endCondition>
+	</scene>
+	
+	<scene type="normal" id = "27">
+		
+		<introMessage>Parece que hay algo dentro. Es una tarjeta de un club de alterne. La guardaré
+				    por si acaso</introMessage>
+		
+		<description>Examinar sombrero</description>
+		
+		<nextScenes>
+			<idNextScenes id = "25"/>
+			<idNextScenes id = "38"/>
+			<idNextScenes id = "41"/>
+		</nextScenes>
+		
+		<transitionCondition></transitionCondition>
+		
+		<endCondition>
+			<idEndCondition id = "25"/>
+		</endCondition>
+	</scene>
+
+	<!-- .................... Entramos en la habitación donde se encuentra el cádaver ............................ -->
+	
+	<scene type="normal" id = "28">
+
+		<introMessage>Esto está hecho un desastre. A ver qué encontramos por aquí</introMessage>
+		
+		<description>Entrar en la habitación donde se encontró el cádaver</description>
+		
+		<nextScenes>
+			<idNextScenes id = "29"/>
+			<idNextScenes id = "30"/>
+			<idNextScenes id = "31"/>
+			<idNextScenes id = "33"/>
+			<idNextScenes id = "21"/>
+		</nextScenes>
+		
+		<transitionCondition></transitionCondition>
+		
+		<endCondition>
+			<idEndCondition id = "21"/>
+		</endCondition>
+	</scene>
+	
+	<scene type="normal" id = "29">
+
+		<introMessage>No parece haber nada sospechoso</introMessage>
+		
+		<description>Cama deshecha</description>
+		
+		<nextScenes>
+			<idNextScenes id = "28"/>
+		</nextScenes>
+		
+		<transitionCondition></transitionCondition>
+		
+		<endCondition>
+			<idEndCondition id = "28"/>
+		</endCondition>
+	</scene>
+	
+	<scene type="normal" id = "30">
+		<introMessage>¡Wow! Yo leí este libro hace un tiempo y era buenísimo</introMessage>
+		
+		<description>Examinar libro</description>
+		
+		<nextScenes>
+			<idNextScenes id = "28"/>
+		</nextScenes>
+		
+		<transitionCondition></transitionCondition>
+		
+		<endCondition>
+			<idEndCondition id = "28"/>
+		</endCondition>
+	</scene>
+	
+	<scene type="normal" id = "31">
+
+		<introMessage>Por el rastro de sangre parece que intentaron mover el cuerpo...Imagino que al estar
+				    tan gordo no pudo con él</introMessage>
+		
+		<description>Examinar sangre</description>
+		
+		<nextScenes>
+			<idNextScenes id = "28"/>
+		</nextScenes>
+		
+		<transitionCondition></transitionCondition>
+		
+		<endCondition>
+			<idEndCondition id = "28"/>
+		</endCondition>
+	</scene>
+	
+	<!--   <scene type="normal" id = "32">
+
+		<introMessage>Quizá pueda pasarme luego por la joyería a ver qué me cuentan de esta persona</introMessage>
+		
+		<description>Examinar collar</description>
+		
+		<nextScenes>
+			<idNextScenes id = "28"/>
+		</nextScenes>
+		
+		<transitionCondition></transitionCondition>
+		
+		<endCondition>
+			<idEndCondition id = "28"/>
+		</endCondition>
+	</scene>
+	-->
+
+	<!-- .................... Cádaver ............................ -->
+
+	<scene type="normal" id = "33">
+
+		<introMessage>Parece que lleva muerto varias horas</introMessage>
+		
+		<description>Examinar cádaver</description>
+		
+		<nextScenes>
+			<idNextScenes id = "34"/>
+			<idNextScenes id = "36"/>
+			<idNextScenes id = "28"/>
+		</nextScenes>
+		
+		<transitionCondition></transitionCondition>
+		<endCondition>
+			<idEndCondition id = "28"/>
+		</endCondition>
+	</scene>
+	
+	<scene type="normal" id = "34">
+
+		<introMessage>Directo al entrecejo</introMessage>
+		
+		<description>Tiro en la frente</description>
+		
+		<nextScenes>
+			<idNextScenes id = "33"/>
+		</nextScenes>
+		
+		<transitionCondition></transitionCondition>
+		<endCondition>
+			<idEndCondition id = "33"/>
+		</endCondition>
+	</scene>
+	
+	<scene type="normal" id = "36">
+
+		<introMessage>Vaya, hay un número de teléfono. Esto me será útil</introMessage>
+		
+		<description>Papel que sostiene</description>
+		
+		<nextScenes>
+			<idNextScenes id = "33"/>
+		</nextScenes>
+		
+		<transitionCondition></transitionCondition>
+		<endCondition>
+			<idEndCondition id = "36"/>
+		</endCondition>
+	</scene>
+
+<!-- .................... Conversación con vecino hemos visitado la joyería ............................ -->
+	<scene type="normal" id = "37">
+		<npc name = "Preguntar si oyó algo extraño">
+			<dialog>
+				<answer author="Vecino">Lo siento, pero no estuve anoche en mi casa, por lo que no puedo ayudarle con el caso.</answer>
+				<answer author = "John T.">Qué casualidad..</answer>
+			</dialog>
+		</npc>
+		<npc name = "Preguntar dónde estuvo anoche">
+			<dialog>
+				<answer author="Vecino">Anoche salí de fiesta con unos amigos</answer>
+				<answer author = "John T.">Unos de fiesta, mientras que otros luchan por no meter el pie en la tumba.</answer>
+			</dialog>
+		</npc>
+		<npc name = "Presionar" transition = "true">
+			<dialog>
+				<answer author="John T.">¿Podría decirme al menos si conocía a la persona asesinada?</answer>
+				<answer author="Vecino">Emm no, de hecho, no sé ni quién vive ahí.</answer>
+				<answer author="John T.">¿Es su vecino de enfrente y no conoce si quiera de vista a esa persona? Me está tomando el pelo, ¿verdad?</answer>
+				<answer author="Vecino">¡Le digo que no le conozco! ¡Y no debería meterse dónde no le llaman!</answer>
+			</dialog>
+		</npc>
+		<introMessage>En la escena había un personaje sospechoso que John T. no pudo ignorar...</introMessage>
+		
+		<description>Hablar con Vecino</description>
+		
+		<nextScenes>
+			<idNextScenes id = "21"/>
+		</nextScenes>
+		
+		<transitionCondition></transitionCondition>
+		
+		<endCondition>
+			<idEndCondition id = "21"/>
+		</endCondition>
+	</scene>
+
+<!--............................................................ Escena 2.0 ............................................................-->
+
+	<!--.................................. Club de alterne con sombrero pero sin collar (sin efecto)........................................-->
+	<scene type="normal" id = "19">
+	
+		<npc name = "Hablar con encargado" transition = "true">
+			<dialog>
+				<answer author="Encargado">Hola, buenas. ¿En qué puedo ayudarle?</answer>
+				<answer author="John T.">Ando buscando a una chica que tengo entendido que trabaja en este local.</answer>
+				<answer author="Encargado">Como no sea más preciso...mi local siempre anda lleno de chicas.</answer>
+				<answer author="John T.">Encontré la dirección de este local en esta tarjeta. ¿Sabe quién las facilita?</answer>
+				<answer author="Encargado">Esas tarjetas están sobre la barra. Cualquier persona puede cogerlas.</answer>	
+				<answer author="John T.">De acuerdo. Muchas gracias por su ayuda.</answer>	
+				<answer author="Encargado">De nada, divíertase.</answer>			
+			</dialog>
+		</npc>
+		<npc name = "Hablar con Camarera">
+			<dialog>
+				<answer author="Camarera">Hola, guapo. ¿Qué puedo hacer por ti?</answer>
+				<answer author="John T.">Parece que hoy está animada la cosa.</answer>
+				<answer author="Camarera">Sí, ¿quieres algo?</answer>
+				<answer author="John T.">¿Han venido hoy todas las chicas a trabajar?</answer>
+				<answer author="Camarera">Cada día vienen chicas nuevas. Yo no controlo aquí la gente que entra y sale.</answer>
+				<answer author="John T.">¿Cómo te llamas?</answer>
+				<answer author="Camarera">¿Qué es esto? ¿Un interrogatorio?. Siempre que tu cartera esté llena, me llamaré como quieras. Pero si entras
+				    a preguntar sin más, déjame en paz.</answer>
+				<answer author="John T.">De acuerdo. Sigue a lo tuyo.</answer>
+			</dialog>
+		</npc>
+		<npc name = "Hablar con borracho">
+			<dialog>
+				<answer author="John">Disculpe...</answer>
+				<answer author="Habitual">¡¿Eh?!¿Quién es?</answer>
+				<answer author="John">Me llamo...</answer>
+				<answer author="Habitual">¡Pero no ves que estoy ocupado! ¡Déjame!. Vamos nenaaaa.</answer>				
+			</dialog>
+		</npc>
+		
+		<introMessage>Llegamos al club que aparecía en la tarjeta...</introMessage>
+		
+		<description>Seedy Club</description>
+		
+		<nextScenes>
+			<idNextScenes id = "3"/>
+		</nextScenes>
+		
+		<transitionCondition></transitionCondition>
+		
+		<endCondition>
+			<idEndCondition id = "3"/> 
+		</endCondition>
+	</scene>
+	
+	<!--..................................Joyería sin sombrero........................................-->
+	<scene type="normal" id = "20">
+		
+		<npc name = "Hablar con encargado" transition = "true">
+			<dialog>
+				<answer author="Encargado">Hola, buenas. ¿En qué puedo ayudarle?</answer>
+				<answer author="John T.">Mi nombre es John Tidiac, soy detective y estoy investigando un caso de homicidio. Hemos hallado en la víctima
+				    este collar y creemos que fue adquirido en este lugar. ¿Le suena de algo?</answer>
+				<answer author="Encargado">Oh sí, recuerdo fielmente esta venta. No es sólo un collar, contiene una fotografía en su interior. (El joyero
+				    abre el collar y aparece una fotografía de una pareja). El hombre fue quién encargo la pieza.</answer>
+				<answer author="John T.">¿Sabría decirme cuándo lo adquirió?</answer>	
+				<answer author="Encargado">Hará una semana.</answer>		
+				<answer author="John T.">Muchas gracias.</answer>
+				<answer author="Encargado">Espero haber ayudado.</answer>	    
+			</dialog>
+		</npc>
+		
+		<introMessage>Llegamos a la joyería</introMessage>
+		
+		<description>Joyería</description>
+		
+		<nextScenes>
+			<idNextScenes id = "21"/>
+		</nextScenes>
+		
+		<transitionCondition></transitionCondition>
+		
+		<endCondition>
+			<idEndCondition id = "21"/> 
+		</endCondition>
+	</scene>
+	
+<!--............................................................ Escena 2.1 SC sin nota............................................................-->
+
+	<scene type="normal" id = "38">
+
+		<introMessage>Llegamos al seedy club tras el descubrimiento de la nota</introMessage>
+		
+		<description>Seedy Club</description>
+		
+		<nextScenes>
+			<idNextScenes id = "39"/>
+			<idNextScenes id = "40"/>
+			<idNextScenes id = "21"/>
+		</nextScenes>
+		
+		<transitionCondition>
+		</transitionCondition>
+		
+		<endCondition>
+			<idEndCondition id = "36"/>
+		</endCondition>
+	</scene>
+	
+	<scene type="normal" id = "39">
+		<npc name = "Enseñar fotografía a encargado" transition = "true">
+			<dialog>
+				<answer author="Encargado">Hola. ¿Qué desea?</answer>
+				<answer author="John T.">Busco a esta chica en concreto. (John enseña la foto del collar al encargado).</answer>
+				<answer author="Encargado">¡Oh sí! Está aquí mismo. Deje que le acompañe a su habitación.</answer> 
+			</dialog>
+		</npc>
+		<npc name = "No enseñar fotografía a encargado" transition = "true">
+			<dialog>
+				<answer author="Encargado">Hola. ¿Qué desea?</answer>
+				<answer author="John T.">Ando buscando a una chica que tengo entendido que trabaja en este local.</answer>
+				<answer author="Encargado">Como no sea más preciso...mi local siempre anda lleno de chicas.</answer>
+				<answer author="John T.">Encontré la dirección de este local en esta tarjeta. ¿Sabe quién las facilita?</answer>
+				<answer author="Encargado">Esas tarjetas están sobre la barra. Cualquier persona puede cogerlas.</answer>	
+				<answer author="John T.">De acuerdo. Muchas gracias por su ayuda.</answer>	
+				<answer author="Encargado">De nada, divíertase.</answer>     
+			</dialog>
+		</npc>		
+
+		<introMessage>Decidímos preguntarle al encargado por la foto que conseguimos en la joyería</introMessage>
+		
+		<description>Hablar con encargado</description>
+		
+		<nextScenes>
+			<idNextScenes id = "50"/>
+			<idNextScenes id = "49"/>
+		</nextScenes>
+		
+		<transitionCondition></transitionCondition>
+		
+		<endCondition>
+			<idEndCondition id = "38"/>
+		</endCondition>
+	</scene>
+	
+	<scene type="normal" id = "49">
+		<npc name = "Preguntar a donde le lleva" transition = "true">
+			<dialog>
+			
+			</dialog>
+		</npc>
+
+		<introMessage>Seguimos al encargado y...</introMessage>
+		
+		<description>Seguir al encargado</description>
+		
+		<nextScenes></nextScenes>
+		
+		<transitionCondition></transitionCondition>
+		
+		<endCondition>
+			<idEndCondition id = "38"/> 
+		</endCondition>
+	</scene>
+	
+	<scene type="normal" id = "50">
+		<npc name = "Noquear al encargado" transition = "true">
+			<dialog>
+			
+			</dialog>
+		</npc>
+
+		<introMessage>John T. sospecho ante la aptitud del encargado</introMessage>
+		
+		<description>No seguir al encargado</description>
+		
+		<nextScenes>
+				<idNextScenes id = "21"/>
+		</nextScenes>
+		
+		<transitionCondition></transitionCondition>
+		
+		<endCondition>
+			<idEndCondition id = "21"/>
+		</endCondition>
+	</scene>
+
+	<scene type="normal" id = "40">
+		<npc name = "Enseñar fotografía a Camarera" transition = "true">
+			<dialog>
+				<answer author="Camarera">Hola. ¿Qué quiere?</answer>
+				<answer author="John T.">He encontrado este collar en la escena de un crimen. Creo que pertenece a esta chica que trabaja aquí.</answer>
+				<answer author="Camarera">¡Oh dios mío! ¡Es Alicia! ¿Le ha pasado algo?.</answer> 
+				<answer author="John T.">¿Conoces al hombre de la foto? Es la víctima.</answer>
+				<answer author="Camarera">Sí claro, que le conozco, es David. ¿Qué ha sucedido?</answer> 	
+				<answer author="John T.">No lo sé, pero necesito tu ayuda. Creo que Alicia corre peligro. ¿Sabes dónde puedo encontrarla?.</answer>
+				<answer author="Camarera">Hoy no ha venido a trabajar, podría estar en cualquier parte. Por favor, si sabe algo de ella infórmeme en cuanto lo sepa.</answer> 							
+			</dialog>
+		</npc>
+
+		<introMessage>Decidímos preguntar a una compañera por la foto que conseguimos en la joyería</introMessage>
+		
+		<description>Hablar con Camarera</description>
+		
+		<nextScenes>
+			<idNextScenes id = "38"/>
+		</nextScenes>
+		
+		<transitionCondition></transitionCondition>
+		
+		<endCondition>
+			<idEndCondition id = "38"/>
+		</endCondition>
+	</scene>
+
+<!--............................................................ SC con nota ............................................................-->
+
+	<scene type="normal" id = "41">
+		
+		<introMessage>Llegamos al seedy club tras el descubrimiento de la nota </introMessage>
+		
+		<description>Seedy Club</description>
+		
+		<nextScenes>
+			<idNextScenes id = "43"/>
+		</nextScenes>
+		
+		<transitionCondition>
+			<idTransitionCondition id = "36"/>
+		</transitionCondition>
+		
+		<endCondition>
+			<idEndCondition id = "46"/>
+		</endCondition>
+	</scene>
+	
+	<scene type="normal" id = "43">
+		<npc name = "Enseñar fotografía a " transition = "true">
+			<dialog>
+				<answer author="Camarera">Hola. ¿Qué quiere?</answer>
+				<answer author="John T.">He encontrado este collar en la escena de un crimen. Creo que pertenece a esta chica que trabaja aquí.</answer>
+				<answer author="Camarera">¡Oh dios mío! ¡Es Alicia! ¿Le ha pasado algo?.</answer> 
+				<answer author="John T.">¿Conoces al hombre de la foto? Es la víctima.</answer>
+				<answer author="Camarera">Sí claro, que le conozco, es David. ¿Qué ha sucedido?</answer> 	
+				<answer author="John T.">No lo sé, pero necesito tu ayuda. Creo que Alicia corre peligro. ¿Sabes dónde puedo encontrarla?.</answer>
+				<answer author="Camarera">Hoy no ha venido a trabajar, podría estar en cualquier parte.</answer> 	
+				<answer author="John T.">¿Te da alguna pista esta tarjeta?.</answer>
+				<answer author="Camarera">Es el hotel en el que se suele alojar cuando sale los fines de semana. ¿Cree que podría estar allí?</answer> 	
+				<answer author="John T.">Sólo hay una forma de averiguarlo.</answer>
+			</dialog>
+		</npc>	
+
+		<introMessage>Preguntar a camarera por la fotografía conseguida en la joyería</introMessage>
+		
+		<description>Camarera</description>
+		
+		<nextScenes>
+			<idNextScenes id = "45"/>
+		</nextScenes>
+		
+		<transitionCondition></transitionCondition>
+		
+		<endCondition>
+			<idEndCondition id = "45"/>
+		</endCondition>
+	</scene>
+
+<!--............................................................ Escena Final Hotel ............................................................-->
+
+	<scene type="normal" id = "45">
+
+		<introMessage>Me dirijo hacia el hotel. Pregunto en recepción por Alice y me dicen que se aloja en la habitación 334.
+		Alice me abre la puerta, pero al rato la situación empeora, el vecino de la persona asesinada se encuentra apuntándome con una 
+		pistola. ¿Qué hago ahora?</introMessage>
+		
+		<description>Hotel</description>
+		
+		<nextScenes>
+			<idNextScenes id = "46"/>
+			<idNextScenes id = "47"/>
+			<idNextScenes id = "48"/>
+		</nextScenes>
+		
+		<transitionCondition></transitionCondition>
+		
+		<endCondition>
+			<idEndCondition id = "48"/> 
+		</endCondition>
+	</scene>
+	
+	<scene type="normal" id = "46">
+		<npc name = "Apagar la luz de la habitación" transition = "true">
+			<dialog>
+				<answer author="">John T. lanza la pistola contra el interruptor de la luz, consiguiendo de este modo quedar a oscuras y amordazar al 
+				asesino. Alice da las gracias por todo lo que ha hecho John T. y se despiden hasta su próximo encuentro.</answer> 
+			</dialog>
+		</npc>	
+
+		<introMessage>John T. pensó que quizá podría ganar tiempo si apagaba la luz de la habitación para dejarla a oscuras.</introMessage>
+		
+		<description>Apagar la luz</description>
+		
+		<nextScenes>
+		</nextScenes>
+		
+		<transitionCondition></transitionCondition>
+		
+		<endCondition>
+		</endCondition>
+	</scene>
+	
+	<scene type="normal" id = "47">
+		<npc name = "Ayudar a Alice a salir por la ventana" transition = "true">
+			<dialog>
+				<answer author="John T.">Alice debes de salir de aquí y no veo otra alternativa que huir por la ventana abierta.</answer> 
+				<answer author="Alice">¡Está usted loco!</answer> 	
+				<answer author="John T.">Por favor, tienes que huir. Lánzate cuando yo te diga.</answer> 	
+				<answer author="Vecino loco">¿Qué estáis tramando?</answer> 	
+				<answer author="John T.">¡Ahora!</answer>
+				<answer>¡PAM!</answer> 
+				<answer>Alice escapó sana y salva al caer sobre un montón de bolsas de basura.</answer> 
+			</dialog>
+		</npc>		
+
+		<introMessage>John T. elaboró un plan rápido de huída.</introMessage>
+		
+		<description>Huir por la ventana</description>
+		
+		<nextScenes>
+		</nextScenes>
+		
+		<transitionCondition></transitionCondition>
+		
+		<endCondition></endCondition>
+	</scene>
+	
+	<scene type="normal" id = "48">
+		<npc name = "¡Baja el arma o disparo!" transition = "true">
+			<dialog>
+				<answer author="John T.">Tranquilízate y baja el arma. No queremos que haya heridos.</answer> 
+				<answer author="Vecino loco">¡Yo te amaba! ¡Ese gordo no te convenía!</answer> 	
+				<answer author="John T.">Por favor, ¡baja el arma o si no me veré obligado a disparar!</answer> 	
+				<answer author="Vecino loco">Sin ti esto ya no tiene sentido. No hay razón para vivir. Debes morir.</answer> 	
+				<answer>¡PUM!</answer>
+			</dialog>
+		</npc>		
+
+		<introMessage>John T. desenfunda rápidamente su pistola para hacer frente al asesino</introMessage>
+		
+		<description>Sacar la pistola</description>
+		
+		<nextScenes>
+		</nextScenes>
+		
+		<transitionCondition></transitionCondition>
+		
+		<endCondition></endCondition>
+	</scene>
+</sceneManager>

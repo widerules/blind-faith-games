@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Blind Faith Games is a research project of the e-UCM
+            research group, developed by Gloria Pozuelo and Javier Álvarez, 
+            under supervision by Baltasar Fernández-Manjón and Javier Torrente.
+     
+      Copyright 2011-2012 e-UCM research group.
+    
+       e-UCM is a research group of the Department of Software Engineering
+            and Artificial Intelligence at the Complutense University of Madrid
+            (School of Computer Science).
+    
+            C Profesor Jose Garcia Santesmases sn,
+            28040 Madrid (Madrid), Spain.
+    
+            For more info please visit:  <http://blind-faith-games.e-ucm.es> or
+            <http://www.e-ucm.es>
+    
+    ****************************************************************************
+  	  This file is part of EYES-FREE MINESWEEPER, developed in the Blind Faith Games project.
+   
+         EYES-FREE MINESWEEPER, is free software: you can redistribute it and/or modify
+        it under the terms of the GNU Lesser General Public License as published by
+        the Free Software Foundation, either version 3 of the License, or
+        (at your option) any later version.
+    
+        EYES-FREE MINESWEEPER is distributed in the hope that it will be useful,
+        but WITHOUT ANY WARRANTY; without even the implied warranty of
+        MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+        GNU Lesser General Public License for more details.
+    
+        You should have received a copy of the GNU Lesser General Public License
+        along with Adventure.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<resources>
+
+    <!-- Menu item text [CHAR LIMIT=NONE] -->
+    <string name="accounts">Cuentas</string>
+
+    <!-- Dialog button [CHAR LIMIT=NONE] -->
+    <string name="add_account">Añadir cuenta...</string>
+
+    <!-- Name of the application in the launcher [CHAR LIMIT=NONE] -->
+    <string name="app_name">Buscaminas Accesible</string>
+
+    <!-- Dialog title text [CHAR LIMIT=NONE] -->
+    <string name="attention">Atención</string>
+
+    <!-- Button text [CHAR LIMIT=NONE] -->
+    <string name="connect">Conectar</string>
+
+    <!-- Message text for "Connect" screen [CHAR LIMIT=NONE] -->
+    <string name="connect_text">Esta aplicación solicita permiso para conectar el dispositivo a la nube</string>
+
+    <!-- Header text for "Connect" screen [CHAR LIMIT=NONE] -->
+    <string name="connect_to_the_cloud">Conectar a la nube</string>
+
+    <!-- Header text for "Connected" screen [CHAR LIMIT=NONE] -->
+    <string name="connected_to_the_cloud">Conectado a la nube</string>
+
+    <!-- Message text [CHAR LIMIT=NONE] -->
+    <string name="contacting_server">Contactando con el servidor...</string>
+
+    <!-- Button text [CHAR LIMIT=NONE] -->
+    <string name="disconnect">Desconectado</string>
+
+    <!-- Informational text for "Connected" screen with placeholder for account name [CHAR LIMIT=NONE] -->
+    <string name="disconnect_text">Este dispositivo está actualmente conectado a la nube como %1$s.</string>
+
+    <!-- Footer text for "Connect" screen [CHAR LIMIT=NONE] -->
+    <string name="do_you_want_to_connect">¿Quiere conectarse?</string>
+
+    <!-- Footer text for "Disconnect" screen [CHAR LIMIT=NONE] -->
+    <string name="do_you_want_to_disconnect">¿Quiere desconectase?</string>
+
+    <!-- Dialog message text [CHAR LIMIT=NONE] -->
+    <string name="needs_account">Para recibir notificaciones de esta aplicación, primero debe crear una cuenta.</string>
+
+    <!-- Notification message [CHAR LIMIT=NONE] -->
+    <string name="registration_error">Fallo en el registro %1$s.</string>
+
+    <!-- Notification message [CHAR LIMIT=NONE] -->
+    <string name="registration_succeeded">Registrado %1$s para mensajería C2DM.</string>
+
+    <!-- Button text [CHAR LIMIT=NONE] -->
+    <string name="say_hello">Di Hola</string>
+
+    <!-- List view header text [CHAR LIMIT=NONE] -->
+    <string name="select_account">Seleccione la cuenta que desea autorizar</string>
+
+    <!-- Dialog button text [CHAR LIMIT=NONE] -->
+    <string name="skip">Omitir</string>
+
+    <!-- Notification message [CHAR LIMIT=NONE] -->
+    <string name="unregistration_succeeded">No registrado %1$s para mensajería C2DM.</string>
+    
+    <!-- =============================== -->
+    <!--           DIÁLOGOS  			 -->
+    <!-- =============================== -->        
+    
+    <string name="group_name">Juego hecho por, Blind Faith Games</string>	
+	<string name="mode">Esta aplicación funciona con el dispositivo móvil en posición vertical.</string>
+    <string name="interactionMode_select">Esto es un proyecto de investigación que trata de obtener una visión sobre cómo las personas con discapacidad visual pueden
+        jugar a juegos en dispositivos móviles y cómo los desarrolladores pueden crear juegos que no son sólo accesibles,
+        sino también agradables para ellos. Seleccione un modo de interacción dependiendo de si tiene discapacidad o no. Para seleccionar una opción mantenga la pulsación</string>
+    <string name="interactionMode_select_TTS">Esto es un proyecto de investigación que trata de obtener una visión sobre cómo las personas con discapacidad visual pueden
+        jugar a juegos en dispositivos móviles y cómo los desarrolladores pueden crear juegos que no son sólo accesibles,
+        sino también agradables para ellos. Seleccione un modo de interacción dependiendo de si tiene discapacidad o no. Para seleccionar una opción mantenga la pulsación</string>
+    <string name="blindMode_label">Interacción para ciegos</string>
+    <string name="noBlindMode_label">Interacción estándar</string>
+    <string name="cellStatePushed">Destapada</string>
+	<string name="cellStateNotPushed">Tapada</string>
+	<string name="cellStateMine">Mina</string>
+	<string name="cellStateFlagged">Bandera</string>
+	<string name="cellStateUnknown">Estado desconocido</string>
+    <string name="find">Encontrar</string>
+    <string name="intro_main_menu">Menú principal de Buscaminas Accesible. Puede navegar por el menú mediante pulsaciones simples sobre las diferentes opciones, 
+    							para seleccionar haga una pulsación larga sobre la opción que desee</string>
+    <string name="tts_select">Le recomendamos descargar el sintetizador "IVONA Text-to-Speech HQ", por su gran calidad. Nosotros no colaboramos con el proyecto IVONA pero es el mejor sintetizador
+   	que hemos encontrado. ¿Desea instalarlo?</string>
+   	<string name="yes_label">Sí</string>
+    <string name="no_label">No</string>
+    <string name="create">Crear nuevo Log</string>
+    <string name="introMessage">Bienvenido, seleccione una dificultad</string>
+    <string name="buttonMessage">¡Adelante!</string>
+    
+    <!-- =============================== -->
+    <!--           MENU  			 -->
+    <!-- =============================== -->        
+    
+    <string name="minesweeperActivity">Buscaminas</string>
+    <string name="gameOverMessage">Fin de la partida</string>
+    <string name="resetButtonMessage">Reiniciar</string>
+    <string name="exitButton">Salir</string>
+    <string name="main_title">Buscaminas accesible</string>
+    <string name="continue_label">Continuar</string>
+    <string name="new_game_label">Nuevo juego</string>
+    <string name="tutorial_label">Tutorial</string>
+    <string name="keyConf_label">Configuración de teclado</string>
+    <string name="about_label">Acerca de</string>
+    <string name="exit_label">Salir</string>
+    <string name="about_title">Acerca de Buscaminas Accesible</string>
+    <string name="about_text">
+		Buscaminas Accesible, 2012. \n\n
+		
+		Buscaminas Accesible es parte del proyecto de investigación Blind Faith Games (BFG), que trata de averiguar estrategias de diseño adecuadas para producir juegos de los que puedan disfrutarse en un dispositivo con Android&#8482;  
+		independientemente de las capacidades de visión de la persona. Por favor, si tiene cinco minutos le agradeceríamos que rellenara el formulario de evaluación que encontrará a través del menú principal de la aplicación, esto nos ayudará a mejorarla.\n\n
+		
+		BFG es un proyecto del grupo e-UCM, y ha sido desarrollado por Gloria Pozuelo y Javier Álvarez.\n
+		e-UCM es un grupo de investigación reconocido del Departamento de Ingeniería del Software e Inteligencia Artificial de la Universidad Complutense de Madrid.\n\n
+		
+		Para más información visite: <a href="http://blind-faith-games.e-ucm.es">http://blind-faith-games.e-ucm.es</a>\n
+		Dirección de contacto: android@e-ucm.es \n\n       
+		
+		<i>Android es una marca registrada de Google Inc.</i>        
+    </string>
+    <string name="settings_label">Configuración</string>
+    <string name="settings_title">Configuración de Buscaminas</string>
+    <string name="settings_shortcut">s</string>
+    <string name="music_title">Música</string>
+    <string name="music_summary">Reproducir música de fondo</string>
+    <string name="transcription_title">Modo onomatopeyas</string>
+    <string name="transcription_summary">Muestra el texto del sonido que reproduce el sintetizador</string>
+    <string name="blind_interaction_title">Modo de interacción para ciegos</string>
+    <string name="blind_interaction_summary">Añade una pulsación más a todos los eventos táctiles en pantalla</string>
+    <string name="blind_mode_title">Modo Pantalla negra</string>
+    <string name="blind_mode_summary">Permite usar la aplicación sin ninguna referencia visual en el menú principal y en el juego.</string>
+    <string name="new_game_title">Dificultad</string>
+    <string name="easy_label">Fácil</string>
+    <string name="medium_label">Medio</string>
+    <string name="hard_label">Difícil</string>
+    <string name="game_title">Juego</string>
+    <string name="flags_label">Turn Explore</string>
+    <string name="flags_title">Ajuste de banderas</string>
+    <string name="flags_shortcut">f</string>
+    <string name="instructions_label">Instrucciones</string>
+    <string name="instructions_title">Intrucciones del Buscaminas</string>
+    <string name="instructions_general_label">Instrucciones</string>
+    <string name="instructions_general_title">Intrucciones del Buscaminas</string>
+    <string name="instructions_controls_label">Controles</string>
+    <string name="instructions_controls_title">Controles del buscaminas</string>
+    <string name="instructions_general_text">El tablero es una matriz de casillas. En algunas de estas casillas se encuentran escondidas minas.
+        El objetivo es destapar todo el tablero evitando destapar alguna casilla con mina.\n\n
+		
+		Para lograrlo, puede pulsar sobre cualquier celda -modo excavación- o marcarla -modo exploración-
+		con una bandera, si está seguro de que contiene una mina. Cuando pulse sobre una casilla, se descubrirán varias casillas
+		mostrando mediante dígitos cuántas minas se encuentran alrededor de éstas.\n\n
+		\n\n
+		Opciones: puede configurar las opciones del juego accediendo desde el menú principal, para activar o desactivar el sintetizador 
+		o la música del juego.</string>
+    <string name="instructions_controls_text">Para jugar al Buscaminas Accesible dispone de estos controles:\n\n
+        
+        Uso de los botones:\n
+        - Botón menú - Para repetir el último mensaje del sintetizador de voz\n
+        - Botón silenciar - Activa o desactiva modo exploración\n
+        - Subir volumen - Activa o desactiva el modo zoom\n
+		- Botón cámara - Para escuchar estas instrucciones\n
+        - Bajar volumen - para escuchar las coordenadas de la casilla en la que está situado\n
+        - Botón buscar - Le informa del contexto de la casilla, es decir, escuchará información de cada casilla que rodea a la 
+        seleccionada, empezando por la casilla superior y terminando por la esquina superior izquierda en el sentido de las agujas del 
+        reloj\n\n
+
+        
+        Si no dispone de alguno de estos botones en su dispositivo, puede cambiar la configuración de teclado accediendo desde el 
+        menú principal.\n\n
+
+		Jugando con la pantalla táctil:\n
+		- Una pulsación - selecciona una casilla\n
+		- Dos pulsaciones - excava una casilla\n
+		- Tres pulsaciones - explora una casilla\n
+		- Arrastrar - notifica la casilla sobre la que se encuentra\n\n
+		
+		Jugando con teclado:\n
+		- Flechas de dirección - para seleccionar una casilla\n
+		- Botón enter - para excavar o explorar una casilla\n\n
+		
+		Si se encuentra en modo zoom, pulse el botón enter o realice una pulsación para excavar o explorar.</string>
+    <string name="synthetizer_title">Sintetizador</string>
+    <string name="synthesizer_suggestion">Le recomendamos descargar el sintetizador "IVONA Text-to-Speech HQ"</string>
+    <string name="LosePositiveButtonLabel">Reiniciar</string>
+    <string name="LoseNegativeButtonLabel">Volver al menú principal</string>
+    <string name="WinPositiveButtonLabel">Ok</string>
+    <string name="LoseDialogTitle">Fin del juego</string>
+    <string name="WinDialogTitle">¡¡ENHORABUENA!!</string>
+    <string name="WinDialogMessage">"¡Victoria!"</string>
+    <string name="tts_title">Sintetizador por defecto</string>
+    <string name="tts_summary">Habilita el sintetizador</string>
+    <string name="volume_up">Subir volumen</string>
+    <string name="volume_down">Bajar volumen</string>
+    <string name="home">Inicio</string>
+    <string name="back">Atrás</string>
+    <string name="options">Opciones</string>
+    <string name="search">Buscar</string>
+    <string name="alert_dialog_difficulty_TTStext">Diálogo de dificultad</string>
+    <string name="alert_dialog_instructions_TTStext">Diálogo</string>
+    <string name="main_menu_initial_TTStext">Menú principal</string>
+    <string name="settings_menu_initial_TTStext">Menú de ajustes. 
+				Pulsando en cualquiera de las opciones mostradas a lo largo de la pantalla puede activar o desactivar 
+			    una configuración. Al tiempo que activa o desactiva puede leer su descripción para conocer la función que
+			    lleva a cabo en la aplicación.
+			    Tiene las siguientes opciones dentro de este menu\: 
+	</string>
+    <string name=" accounts_menu_initial_TTStext">Cuentas</string>
+    <string name="game_initial_TTStext">¡El juego ha comenzado!</string>
+    <string name="exploration_mode_TTStext">Modo exploración</string>
+    <string name="zoom_mode_TTStext">Modo zoom</string>
+    <string name="coordinates_information_button_TTStext">Posición</string>
+    <string name="key_configuration_menu_initial_TTStext">
+				Configuración de teclado. Mediante taps a su izquierda puede escuchar
+			    las descripciones de las acciones, a su derecha puede cambiar la tecla relacionada
+				con la acción de la izquierda. Si está en modo de interacción para ciegos el cambio de configuración asociada a una tecla
+				será mediante una pulsación larga, sino mediante pulsación simple. En total se tienen las siguiente opciones\: 
+    </string> 
+    
+    <!-- =============================== -->
+    <!--        CONFIGURACION  			 -->
+    <!-- =============================== -->        
+    
+    <string name="button_coord">Botón de coordenadas</string>
+    <string name="button_instr">Botón de instrucciones</string>
+    <string name="button_zoom">Botón de zoom</string>
+    <string name="button_exploration">Botón de exploración</string>
+    <string name="button_context">Lectura de información de contexto</string>
+    <string name="button_repeat">Repite el último mensaje reporducido por el sintetizador de voz</string>
+    <string name="context_coordinates_title">Información de contexto</string>
+    <string name="context_coordinates_summary">Lee las casillas situadas alrededor de la seleccionada</string>
+    <string name="keydialog">Configuración de acción</string>
+    <string name="keydialog_text">Pulse cualquier tecla</string>
+    <string name="form_label">Formulario</string>
+    <string name="on_back_pressed">Tiene que completar el formulario</string>
+    <string name="key_conf_fail">No es una tecla válida</string>
+    <string name="key_conf_success">Ha cambiado la tecla asociada a</string>
+
+    <!-- =============================== -->
+    <!--         FORMULARIOS  			 -->
+    <!-- =============================== -->    
+    
+    <string name= "form_instructions1"> Puede navegar a través de este menú, haciendo long click sobre los botones siguiente y anterior, situados debajo
+    		de cada conjunto de posibles respuestas, o de cada texto. Si se realiza un click se leerá la opción. Importante, la opción que se clickee la última vez será la seleccionada. 
+	</string>
+	<string name= "form_instructions2">En este caso, si quiere, puede rellenar un campo de texto con su opinión sobre la aplicación.</string>
+	<string name= "form_instructions3">De ahora en adelante, tiene varias opciones para responder a cada pregunta. Haga click sobre la opción para seleccionarla.</string>
+	<string name= "form_instructions4"> Tiene que rellenar este campo con su opinión sobre la aplicación.</string>
+    <string name="form_intro">Esto es un proyecto de investigación que trata de obtener una visión sobre cómo las personas con discapacidad visual pueden
+        jugar a juegos en dispositivos móviles y cómo los desarrolladores pueden crear juegos que no son sólo accesibles,
+        sino también agradables para ellos. Para cumplir estos objetivos, nos gustaría conocer algunos detalles acerca de usted 
+        y de cómo interactúa con las tecnologías en general y los juegos en particular. Esto nos ayudará a interpretar sus respuestas
+        a este cuestionario. Toda la información recopilada a través de este cuestionario será anónima, serán tratados de forma 
+        confidencial y sólo se utilizarán con el único propósito del estudio. \n</string>
+    <string name="q1_context">Marque la opción que mejor describe su nivel visual actual</string>
+    <string name="q2_context">¿Cuánto tiempo suele dedicar a jugar con ordenador o consola?. Donde 1 significa "Nunca" y 5 "Muy a menudo"</string>
+    <string name="q3_context">¿Cuánto tiempo suele dedicar a jugar con dispositivos móviles (móvil o tableta)?. Donde 1 significa "Nunca" y 5 "Muy a menudo"</string>
+    <string name="q4_context">¿Cuánto le ha costado aprender a jugar?. Donde 1 significa "Muy difícil" y 5 "Muy fácil".</string>
+    <string name="q5_context">¿Cómo de divertida le ha parecido la experiencia de juego?. Donde 1 significa "Muy aburrido" y 5 "Muy divertido".</string>
+    <string name="q6_context">¿Cómo de entretenida le ha resultado el juego?. Donde 1 significa "poco entretenido" y 5 "muy entretenido".</string>
+    <string name="q7_context">¿Le parece cómoda la interacción con el dispositivo?. Donde 1 significa "incómodo" y 5 "muy cómodo".</string>
+    <string name="q8_context">Evalúe la historia (si es aplicable). Donde 1 significa "No me ha gustado mucho" y 5 "Me ha gustado mucho".</string>
+    <string name="q9_context">Evalúe la accesibilidad y los ajustes de control. Donde 1 significa "No me ha gustado mucho" y 5 "Me ha gustado mucho".</string>
+    <string name="q10_context">Evalúe la retroalimentación proporcionada en el juego.Donde 1 significa "No me ha gustado mucho" y 5 "Me ha gustado mucho".</string>
+    <string name="q11_context">Finalmente, proporcione algunos comentarios o sugerencias para mejorar el juego. Después pulse el botón finalizar
+        para mandarnos las respuestas y ¡esto es todo!.</string>
+    <string name="radio11">Soy ciego</string>
+    <string name="radio12">Mi visión está limitada</string>
+    <string name="radio13">No tengo discapacidad visual</string>
+    <string name="one_context">1</string>
+    <string name="two_context">2</string>
+    <string name="three_context">3</string>
+    <string name="four_context">4</string>
+    <string name="five_context">5</string>
+    <string name="na">NA</string>
+    <string name="next_context">Siguiente</string>
+    <string name="previous_context">Previa</string>
+    <string name="finish_context">Finalizar</string>
+     <string name="action_form">Has seleccionado</string>
+     
+    <string name="load_text">Enviando información... Por favor espere</string>
+    <string name="instructions_dialog_select">Seleccione controles o instrucciones</string>
+    <string name="game_dialog_select">Seleccione una dificultad</string>
+
+    <!-- =============================== -->
+    <!--           TUTORIAL  			 -->
+    <!-- =============================== -->    
+    
+    <string name="tut_step">Para ir al siguiente consejo, realice una pulsación en la parte superior de la pantalla.</string>
+    <string name="tut_finish">Para finalizar, realice una pulsación en la parte superior de la pantalla.</string>
+    <string name="tut_intro_text">En este tutorial, aprenderá las lecciones básicas para jugar.</string>
+    <string name="tut_tap_text">Pulse una casilla para seleccionarla y escuchar su estado. ¡Pruébelo!.</string>
+    <string name="tut_dtap_text">Realice doble pulsación en pantalla para excavar una casilla. ¡Pruébelo!.</string>
+    <string name="tut_trtap_text">Realice una triple pulsación en pantalla para explorar una casilla no destapada. ¡Pruébelo!.</string>
+    <string name="tut_drag_text">Podrá comprobar cómo cambia la casilla seleccionada realizando eventos de arrastre en pantalla. ¡Compruébelo!</string>
+    <string name="tut_keyboard_text">En el Buscaminas accesible puede asignar teclas a acciones.
+									Algunas de ellas son:\n
+									Lectura de instrucciones: para recordar cómo jugar, use el botón Cámara por defecto.\n
+									Coordenadas: para escuchar el estado de la casilla y las coordenadas, use el botón bajar volumen por defecto. \n
+									El modo zoom y el modo exploración se explican en el tutorial a continuación.
+									¡Ahora pruebe a usarlos!.</string>
+    <string name="tut_zoom_mode_text">El modo zoom permite centrar la vista en una casilla determinada. Para destapar 
+    la casilla en este modo, simplemente hay que realizar una pulsación en pantalla. Además, si pulsa sobre alguno de los extremos
+    de la pantalla, podrá desplazarse por el tablero. También cambia la forma de interactuar, de forma que para excavar haremos 
+    una pulsación y para explorar dos pulsaciones en pantalla. Para habilitar el modo zoom, simplemente debe presionar el botón de 
+    subir volumen, o el que haya establecido en el panel de configuración de teclado. ¡Ahora pruebe a usar el modo zoom!
+	</string>
+    <string name="tut_exploration_mode_text">El modo exploración permite establecer banderas en las casillas
+     independientemente del evento táctil que realice (una pulsación, dos, tres...).Para habilitar el modo exploración, simplemente debe presionar el botón de 
+    silenciar, o el que haya establecido en el panel de configuración de teclado. ¡Compruébelo!</string>
+    <string name="tut_read_context_text">Es una opción adicional que lee los estados de las casillas que rodean a la seleccionada. 
+    Para leer celdas, simplemente debe presionar el Botón buscar,
+     o el que haya establecido en el panel de configuración de teclado.¡Pruébelo!</string>
+
+    <!-- =============================== -->
+    <!--           ACCIONES  			 -->
+    <!-- =============================== -->    
+    
+    <string name="action_exploration">Modo exploración activado/desactivado</string>
+    <string name="action_coordinates">Coordenadas</string>
+    <string name="action_zoom">Modo zoom activado/desactivado </string>
+    <string name="action_context">Lectura de las casillas alrededor de la actual</string>
+    <string name="action_blind_mode">Modo ciego</string>
+    <string name="action_instructions">Instrucciones</string>
+    <string name="action_repeat">Repetir mensaje del sintetizador</string>
+    
+    <string name="disabled">Desactivada</string>
+    <string name="enabled">Activada</string>
+	<string name="state">Estado celda actual: </string>
+
+    <string name="next">Siguiente</string>
+
+    
+    <string name="pushCellSuccess">¡Genial!. Ha conseguido destapar varias celdas.</string>
+    <string name="transition_zoom">Hay un cambio de celda. Celda actual</string>
+    
+    <string name="infoKeyConf">asociada a</string>
+    <string name="infoKeyConffail">asociada a ninguna tecla.</string>
+    
+    <string name="screen_off_message">Su pantalla se ha apagado.</string>
+    <string name="screen_on_message">Su pantalla se ha encendido. Tal vez tenga que desbloquear su dispositivo.</string>
+    
+    <string name="other_side">Reproduciendo \'The other side of the door\'</string>
+    <string name="passing_action">Reproduciendo \'Passing action\'</string>
+</resources>
