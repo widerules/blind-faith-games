@@ -68,7 +68,7 @@
 			</dialog>
 		</npc>
 		
-		<introMessage>Se trata de tu viejo compañero Jim McNutty, que...</introMessage>
+		<introMessage>Se trata de tu viejo compañero Jim McNutty, que parece traer nuevas noticias</introMessage>
 		
 		<description>Abrir la puerta</description>
 		
@@ -94,16 +94,6 @@
 				<answer author = "McNulty">¡Venga ya!Estás de broma...</answer>
 				<answer author = "John T.">Bueno vale, desde que me echaron, me he encerrado en este cuchitril y me he dedicado
 			    	a emborracharme ¡¿y qué?! ya todo da igual...</answer>	    
-			</dialog>
-		</npc>
-		
-		<npc name = "Rememorar viejos tiempos">
-			<dialog>
-				<answer author = "John T.">Ah, recuerdas los viejos tiempos cuando trabajabamos para resolver casos en homicidios,
-					en aquellos tiempos un detective podía hacer su labor sin verse comprometido.</answer>
-				<answer author = "McNulty">Vaya que sí John, vaya que sí. Recuerdas el caso aquel del carnicero de la bahía.</answer>
-				<answer author = "John T.">Sí, lo que costó descubrirle y poder disponer de los medios para atraparlo. 
-					Menuda pieza más de 30 cadaveres descuartizados tirados en una fosa dentro de la bahía menuda pieza.</answer>
 			</dialog>
 		</npc>
 		

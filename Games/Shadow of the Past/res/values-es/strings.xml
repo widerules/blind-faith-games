@@ -154,10 +154,10 @@
     <string name="initial_message">Preparado... ¡Ya!</string>
     <string name="ending_lose_message">Fin del juego</string>
     <string name="ending_win_message">Encontraste un obeaune.</string>
-   
+    
     <string name="game_over_text">Ha perdido el caso</string>
-    <string name="game_over_tts">El juego finaliza aquí. Para salir realice una pulsación larga</string>
-        <string name="screen_change_begins">Cambio de pantalla comenzado.</string>
+    <string name="game_over_tts">Ha perdido el caso. Para salir realice una doble pulsación</string>
+    <string name="screen_change_begins">Cambio de pantalla comenzado.</string>
     <string name="screen_change_ends">Cambio de pantalla finalizado.</string>
     <string name="instruction_speech">Pulsación larga para regresar al menú principal</string>
     <string name="key_conf_fail">No es una tecla válida</string>

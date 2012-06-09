@@ -160,13 +160,7 @@ public class MainActivity extends Activity implements OnClickListener, OnFocusCh
 		newButton.setOnFocusChangeListener(this);
 		newButton.setOnLongClickListener(this);
 		newButton.setTextSize(fontSize);
-		newButton.setTypeface(font);	
-		Button tutorialButton = (Button) findViewById(R.id.tutorial_button);
-		tutorialButton.setOnClickListener(this);
-		tutorialButton.setOnFocusChangeListener(this);
-		tutorialButton.setOnLongClickListener(this);
-		tutorialButton.setTextSize(fontSize);
-		tutorialButton.setTypeface(font);		
+		newButton.setTypeface(font);
 		Button settingsButton = (Button) findViewById(R.id.settings_button);
 		settingsButton.setOnClickListener(this);
 		settingsButton.setOnFocusChangeListener(this);
@@ -247,7 +241,6 @@ public class MainActivity extends Activity implements OnClickListener, OnFocusCh
 	
 	private void setTTS(){
 		Button newButton = (Button) findViewById(R.id.new_button);
-        Button tutorialButton = (Button) findViewById(R.id.tutorial_button);
 		Button settingsButton = (Button) findViewById(R.id.settings_button);
 		Button keyConfButton = (Button) findViewById(R.id.keyConf_button);
 		Button aboutButton = (Button) findViewById(R.id.about_button);
@@ -264,7 +257,6 @@ public class MainActivity extends Activity implements OnClickListener, OnFocusCh
 		// Checking if TTS is installed on device
 		textToSpeech = new TTS(this, getString(R.string.introMainMenu)
 				+ newButton.getContentDescription() + ","
-				+ tutorialButton.getContentDescription() + ","
 				+ settingsButton.getContentDescription() + ","
 				+ keyConfButton.getContentDescription() + ","
 				+ aboutButton.getContentDescription() + ","
@@ -334,11 +326,6 @@ public class MainActivity extends Activity implements OnClickListener, OnFocusCh
 				break;
 			case R.id.new_button:
 				startGame();
-				break;
-			case R.id.tutorial_button:
-				i = new Intent(this, TutorialActivity.class);
-				i.putExtra(KEY_TTS, textToSpeech);
-				startActivity(i);
 				break;
 			case R.id.about_button:
 				i = new Intent(this, AboutActivity.class);

@@ -409,15 +409,15 @@ public class Minesweeper extends Activity implements OnFocusChangeListener, OnLo
 		
 		if(selRow - 1 >= 0)
 			msg.add(mineField.getCell(selRow - 1, selCol).cellToString(this));
-		if(selRow - 1 >= 0 && selCol + 1 <= colN)
+		if(selRow - 1 >= 0 && selCol + 1 < colN)
 			msg.add(mineField.getCell(selRow - 1, selCol + 1).cellToString(this));		
-		if(selCol + 1 <= colN)
+		if(selCol + 1 < colN)
 			msg.add(mineField.getCell(selRow, selCol + 1).cellToString(this));	
-		if(selRow + 1 <= rowN && selCol + 1 <= colN)
+		if(selRow + 1 < rowN && selCol + 1 < colN)
 			msg.add(mineField.getCell(selRow + 1, selCol + 1).cellToString(this));	
-		if(selRow + 1 <= rowN)
+		if(selRow + 1 < rowN)
 			msg.add(mineField.getCell(selRow + 1, selCol).cellToString(this));	
-		if(selRow + 1 <= rowN && selCol - 1 >= 0)
+		if(selRow + 1 < rowN && selCol - 1 >= 0)
 			msg.add(mineField.getCell(selRow + 1, selCol - 1).cellToString(this));	
 		if(selCol - 1 >= 0)
 			msg.add(mineField.getCell(selRow, selCol - 1).cellToString(this));	

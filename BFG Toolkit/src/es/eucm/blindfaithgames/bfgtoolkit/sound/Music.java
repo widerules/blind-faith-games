@@ -112,27 +112,31 @@ public class Music {
 	 * 
 	 * */
 	public void play(Context context, int resource, boolean looping) {
-		// Start music only if not disabled in preferences
-		stop(resource);
-		
-		MediaPlayer mp;
-		mp = MediaPlayer.create(context, resource);
-		if(mp != null){
-			sounds.put(resource, mp);
-			mp.setLooping(looping);
-			mp.start();
+		try{
+			// Start music only if not disabled in preferences
+			stop(resource);
 			
-			if(subs != null){
-				String aux = subs.getOnomatopeia(resource);
-				subs.setDuration(mp.getDuration()/1000);
-				if(aux != null)
-					subs.showSubtitle(aux);
-				else
-					subs.showSubtitle(Integer.toString(resource));
+			MediaPlayer mp;
+			mp = MediaPlayer.create(context, resource);
+			if(mp != null){
+				sounds.put(resource, mp);
+				mp.setLooping(looping);
+				mp.start();
+				
+				if(subs != null){
+					String aux = subs.getOnomatopeia(resource);
+					subs.setDuration(mp.getDuration()/1000);
+					if(aux != null)
+						subs.showSubtitle(aux);
+					else
+						subs.showSubtitle(Integer.toString(resource));
+				}
+			} else {
+				 ErrorReporter.getInstance().handleSilentException(new Exception("Problema con recursos de sonido"
+						 													+ context.getResources().getResourceName(resource)));
 			}
-		} else {
-			 ErrorReporter.getInstance().handleSilentException(new Exception("Problema con recursos de sonido"
-					 													+ context.getResources().getResourceName(resource)));
+		} catch (IllegalStateException e) {
+			 ErrorReporter.getInstance().handleSilentException(e);
 		}
 	}
 	
@@ -146,28 +150,32 @@ public class Music {
 	 * 
 	 *  */
 	public void playWithBlock(Context context, int resource, boolean looping) {
-		stop(resource);
-		
-		MediaPlayer mp;
-		mp = MediaPlayer.create(context, resource);
-		if(mp != null){
-			sounds.put(resource, mp);
-			mp.setLooping(looping);
-			mp.start();
+		try{
+			stop(resource);
 			
-			if(subs != null){
-				String aux = subs.getOnomatopeia(resource);
-				subs.setDuration(mp.getDuration()/1000);
-				if(aux != null)
-					subs.showSubtitle(aux);
-				else
-					subs.showSubtitle(Integer.toString(resource));
+			MediaPlayer mp;
+			mp = MediaPlayer.create(context, resource);
+			if(mp != null){
+				sounds.put(resource, mp);
+				mp.setLooping(looping);
+				mp.start();
+				
+				if(subs != null){
+					String aux = subs.getOnomatopeia(resource);
+					subs.setDuration(mp.getDuration()/1000);
+					if(aux != null)
+						subs.showSubtitle(aux);
+					else
+						subs.showSubtitle(Integer.toString(resource));
+				}
+				
+				while(mp.isPlaying()){};
+			} else {
+				 ErrorReporter.getInstance().handleSilentException(new Exception("Problema con recursos de sonido"
+							+ context.getResources().getResourceName(resource)));
 			}
-			
-			while(mp.isPlaying()){};
-		} else {
-			 ErrorReporter.getInstance().handleSilentException(new Exception("Problema con recursos de sonido"
-						+ context.getResources().getResourceName(resource)));
+		} catch (IllegalStateException e) {
+			 ErrorReporter.getInstance().handleSilentException(e);
 		}
 	}
 
@@ -180,7 +188,15 @@ public class Music {
 	 * 
 	 * */
 	public void setVolume(float leftVolume, float rightVolume, int resource){
-		sounds.get(resource).setVolume(leftVolume, rightVolume);
+		try {
+			MediaPlayer mp;
+			mp = sounds.get(resource); 
+			if(mp != null){
+				mp.setVolume(leftVolume, rightVolume);
+			}
+		} catch (IllegalStateException e) {
+			 ErrorReporter.getInstance().handleSilentException(e);
+		}
 	}
 	
 	/** 
@@ -191,12 +207,16 @@ public class Music {
 	 * 
 	 * */
 	public void stop(int resource) {
-		MediaPlayer mp = sounds.get(resource);
-		if (mp != null) {
-				mp.stop();
-				mp.release();
-				mp = null;
-				sounds.remove(resource);
+		try{
+			MediaPlayer mp = sounds.get(resource);
+			if (mp != null) {
+					mp.stop();
+					mp.release();
+					mp = null;
+					sounds.remove(resource);
+			}
+		} catch (IllegalStateException e) {
+			 ErrorReporter.getInstance().handleSilentException(e);
 		}
 	}
 
@@ -221,18 +241,22 @@ public class Music {
 	 * 
 	 * */
 	public void stopAllResources() {
-		if(sounds != null){
-			Set<Integer> keys = sounds.keySet();
-			Set<Integer> keysAux = new CopyOnWriteArraySet<Integer>(keys);
-			for(Integer n : keysAux){
-				MediaPlayer mp = sounds.get(n);
-				if (mp != null) {
-						mp.stop();
-						mp.release();
-						mp = null;
-						sounds.remove(n);
+		try{
+			if(sounds != null){
+				Set<Integer> keys = sounds.keySet();
+				Set<Integer> keysAux = new CopyOnWriteArraySet<Integer>(keys);
+				for(Integer n : keysAux){
+					MediaPlayer mp = sounds.get(n);
+					if (mp != null) {
+							mp.stop();
+							mp.release();
+							mp = null;
+							sounds.remove(n);
+					}
 				}
 			}
+		} catch (IllegalStateException e) {
+			 ErrorReporter.getInstance().handleSilentException(e);
 		}
 	}
 }

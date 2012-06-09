@@ -16,14 +16,14 @@
  *           <http://www.e-ucm.es>
  *   
  *   ****************************************************************************
- * 	  This file is part of SHADOW OF THE PAST, developed in the Blind Faith Games project.
+ * 	  This file is part of BFG TOOLKIT, developed in the Blind Faith Games project.
  *  
- *       SHADOW OF THE PAST is free software: you can redistribute it and/or modify
+ *       BFG TOOLKIT is free software: you can redistribute it and/or modify
  *       it under the terms of the GNU Lesser General Public License as published by
  *       the Free Software Foundation, either version 3 of the License, or
  *       (at your option) any later version.
  *   
- *       SHADOW OF THE PAST is distributed in the hope that it will be useful,
+ *       BFG TOOLKIT is distributed in the hope that it will be useful,
  *       but WITHOUT ANY WARRANTY; without even the implied warranty of
  *       MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  *       GNU Lesser General Public License for more details.
@@ -31,7 +31,7 @@
  *       You should have received a copy of the GNU Lesser General Public License
  *       along with Adventure.  If not, see <http://www.gnu.org/licenses/>.
  ******************************************************************************/
-package es.eucm.blindfaithgames.sotp.stories;
+package es.eucm.blindfaithgames.bfgtoolkit.story;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -45,7 +45,7 @@ import org.xml.sax.helpers.DefaultHandler;
  * 
  * Class to manage events sent by a parser SAX.
  * 
- * @author Gloria Pozuelo and Javier Ã�lvarez.
+ * @author Gloria Pozuelo and Javier Álvarez.
  */
 public class StoriesLoader extends DefaultHandler {
 	// Scenes

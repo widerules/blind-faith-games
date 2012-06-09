@@ -16,14 +16,14 @@
  *           <http://www.e-ucm.es>
  *   
  *   ****************************************************************************
- * 	  This file is part of SHADOW OF THE PAST, developed in the Blind Faith Games project.
+ * 	  This file is part of BFG TOOLKIT, developed in the Blind Faith Games project.
  *  
- *       SHADOW OF THE PAST is free software: you can redistribute it and/or modify
+ *       BFG TOOLKIT is free software: you can redistribute it and/or modify
  *       it under the terms of the GNU Lesser General Public License as published by
  *       the Free Software Foundation, either version 3 of the License, or
  *       (at your option) any later version.
  *   
- *       SHADOW OF THE PAST is distributed in the hope that it will be useful,
+ *       BFG TOOLKIT is distributed in the hope that it will be useful,
  *       but WITHOUT ANY WARRANTY; without even the implied warranty of
  *       MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  *       GNU Lesser General Public License for more details.
@@ -31,7 +31,7 @@
  *       You should have received a copy of the GNU Lesser General Public License
  *       along with Adventure.  If not, see <http://www.gnu.org/licenses/>.
  ******************************************************************************/
-package es.eucm.blindfaithgames.sotp.stories;
+package es.eucm.blindfaithgames.bfgtoolkit.story;
 
 import java.util.List;
 import java.util.StringTokenizer;
@@ -46,8 +46,11 @@ import es.eucm.blindfaithgames.bfgtoolkit.general.GameState;
 import es.eucm.blindfaithgames.bfgtoolkit.general.Mask;
 import es.eucm.blindfaithgames.bfgtoolkit.graphics.SpriteMap;
 import es.eucm.blindfaithgames.bfgtoolkit.others.RuntimeConfig;
-import es.eucm.blindfaithgames.sotp.R;
 
+/**
+ * This class shows a progressive message given by parameter on the screen.
+ * 
+ * */
 public class Text extends Entity {
 
 	public static final String SEPARATOR = " // ";
@@ -65,7 +68,7 @@ public class Text extends Entity {
 	
 	public Text(int x, int y, Bitmap img, GameState gameState, List<Mask> mask,
 			SpriteMap animations, String soundName, Point soundOffset,
-			boolean collide, Paint brush, int stepsPerWord, String text) {
+			boolean collide, Paint brush, int stepsPerWord, String text, float fontSize, float WHITE_SPACE_SIZE) {
 		super(x, y, img, gameState, mask, animations, soundName, soundOffset, collide);
 		
 		this.text = text;
@@ -74,8 +77,8 @@ public class Text extends Entity {
 		
 		this.stepsPerWord = stepsPerWord;
 		
-		WHITE_SPACE_SIZE =  (this.gameState.getContext().getResources().getDimension(R.dimen.white_space_size)/GameState.scale);
-		fontSize =  (this.gameState.getContext().getResources().getDimension(R.dimen.font_size_intro)/GameState.scale);
+		this.WHITE_SPACE_SIZE =  WHITE_SPACE_SIZE;
+		this.fontSize =  fontSize;
 		font = Typeface.createFromAsset(this.gameState.getContext().getAssets(),RuntimeConfig.FONT_PATH);
 		if(brush != null){
 			this.brush = brush;
@@ -92,6 +95,8 @@ public class Text extends Entity {
         nTokens =  stk.countTokens();
 	}
 
+// ----------------------------------------------------------- Getters -----------------------------------------------------------	
+
 	public int getnTokens() {
 		return nTokens;
 	}
@@ -100,12 +105,44 @@ public class Text extends Entity {
 		return text;
 	}
 	
+	public boolean isFinished() {
+		return nTokens == nextWord-1;
+	}
+	
+	public boolean isWriting() {
+		StringTokenizer stk = new StringTokenizer(text);
+		return nextWord <= stk.countTokens();
+	}
+	
+// ----------------------------------------------------------- Setters -----------------------------------------------------------
+	
+	public void setStepsPerWord(int stepsPerWord) {
+		this.stepsPerWord = stepsPerWord;
+		steps = 0;
+	}
+
+	public void setText(String text) {
+		this.text = text;
+		nextWord = 0;
+		steps = 0;
+	}
+
+	public void concatText(String speech) {
+		this.text += SEPARATOR + speech;
+	}
+	
+// ----------------------------------------------------------- Others -----------------------------------------------------------	
 	@Override
 	public void onDraw(Canvas canvas) {
 		introTextEffect(canvas);
 		super.onDraw(canvas);
 	}
 	
+	/**
+	 * Shows a progressive text effect on the given canvas
+	 * 
+	 * @param canvas object where the text is painted
+	 * */
 	private void introTextEffect(Canvas canvas) {
 		int i; int row;
 		String aux;
@@ -137,6 +174,10 @@ public class Text extends Entity {
 		}
 	}
 	
+	/**
+	 * Resets the text
+	 * 
+	 * */
 	private void clearText() {
 		StringTokenizer stk = new StringTokenizer(text, SEPARATOR);
 		String aux;
@@ -149,11 +190,10 @@ public class Text extends Entity {
 			}
 		}
 	}
-
+	
 	@Override
 	public void onUpdate() {
 		super.onUpdate();
-		
 		steps++;
 	}
 	
@@ -168,29 +208,4 @@ public class Text extends Entity {
 
 	@Override
 	public void onRemove() {}
-
-	public boolean isFinished() {
-		return nTokens == nextWord-1;
-	}
-
-	public void setStepsPerWord(int stepsPerWord) {
-		this.stepsPerWord = stepsPerWord;
-		steps = 0;
-	}
-
-	public void setText(String text) {
-		this.text = text;
-		nextWord = 0;
-		steps = 0;
-	}
-
-	public boolean isWriting() {
-		StringTokenizer stk = new StringTokenizer(text);
-		return nextWord <= stk.countTokens();
-	}
-
-	public void concatText(String speech) {
-		this.text += SEPARATOR + speech;
-	}
-
 }

@@ -45,15 +45,14 @@ import es.eucm.blindfaithgames.bfgtoolkit.input.Input.EventType;
 import es.eucm.blindfaithgames.bfgtoolkit.others.RuntimeConfig;
 import es.eucm.blindfaithgames.bfgtoolkit.sound.TTS;
 import es.eucm.blindfaithgames.bfgtoolkit.sound.VolumeManager;
+import es.eucm.blindfaithgames.bfgtoolkit.story.Text;
 import es.eucm.blindfaithgames.sotp.R;
-import es.eucm.blindfaithgames.sotp.stories.Text;
 
 public class GameOver extends GameState {
 	
 	private Text text;
 	
 	private int stepsPerWord = RuntimeConfig.TEXT_SPEED;
-
 	
 	public GameOver(View v, TTS textToSpeech, Context c, Game game) {
 		super(v,c,textToSpeech, game);
@@ -72,10 +71,11 @@ public class GameOver extends GameState {
 		if(font != null)
 			brush.setTypeface(font);
 	
+		float whiteSpaceSize = (this.getContext().getResources().getDimension(R.dimen.white_space_size)/GameState.scale);
 		textoffSetX = SCREEN_WIDTH  / 4;
 		textoffSetY = SCREEN_HEIGHT / 2;
 		text = new Text(textoffSetX, textoffSetY, null, this, null, null, 
-				null, null, false, brush, stepsPerWord, this.getContext().getString(R.string.game_over_text));
+				null, null, false, brush, stepsPerWord, this.getContext().getString(R.string.game_over_text), fontSize, whiteSpaceSize);
 		this.addEntity(text);
 		
 	}
@@ -97,7 +97,7 @@ public class GameOver extends GameState {
 				VolumeManager.adjustStreamVolume(this.context, AudioManager.ADJUST_LOWER);
 		}
 		
-		e = Input.getInput().removeEvent("onLongPress");
+		e = Input.getInput().removeEvent("onDoubleTap");
 		if(e != null && text.isFinished()){
 			this.stop();
 		}
