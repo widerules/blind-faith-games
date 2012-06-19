@@ -135,7 +135,7 @@ public class Music {
 				 ErrorReporter.getInstance().handleSilentException(new Exception("Problema con recursos de sonido"
 						 													+ context.getResources().getResourceName(resource)));
 			}
-		} catch (IllegalStateException e) {
+		} catch (Exception e) {
 			 ErrorReporter.getInstance().handleSilentException(e);
 		}
 	}
@@ -174,7 +174,7 @@ public class Music {
 				 ErrorReporter.getInstance().handleSilentException(new Exception("Problema con recursos de sonido"
 							+ context.getResources().getResourceName(resource)));
 			}
-		} catch (IllegalStateException e) {
+		} catch (Exception e) {
 			 ErrorReporter.getInstance().handleSilentException(e);
 		}
 	}
@@ -194,7 +194,7 @@ public class Music {
 			if(mp != null){
 				mp.setVolume(leftVolume, rightVolume);
 			}
-		} catch (IllegalStateException e) {
+		} catch (Exception e) {
 			 ErrorReporter.getInstance().handleSilentException(e);
 		}
 	}
@@ -215,7 +215,7 @@ public class Music {
 					mp = null;
 					sounds.remove(resource);
 			}
-		} catch (IllegalStateException e) {
+		} catch (Exception e) {
 			 ErrorReporter.getInstance().handleSilentException(e);
 		}
 	}
@@ -255,7 +255,7 @@ public class Music {
 					}
 				}
 			}
-		} catch (IllegalStateException e) {
+		} catch (Exception e) {
 			 ErrorReporter.getInstance().handleSilentException(e);
 		}
 	}
