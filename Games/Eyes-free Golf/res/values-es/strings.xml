@@ -190,7 +190,7 @@
     <string name="new_game_dialog_title">Selección de modo</string>
     <string name="recordSpeech">Su record actual es</string>
     <string name="counterSpeech">Su contador actual es</string>
-    <string name="newRecordSpeech">¡Nuevo record!</string>
+    <string name="newRecordSpeech">Nuevo record</string>
     <string name="EndingDialogTitle">Ronda completada</string>
     <string name="EndingPositiveButtonLabel">Ok</string>
     <string name="EndingPositiveButtonLabelSpeech">Presione ok para volver al menú principal</string>

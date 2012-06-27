@@ -245,6 +245,7 @@
     <string name="exploration_mode_TTStext">Modo exploración</string>
     <string name="zoom_mode_TTStext">Modo zoom</string>
     <string name="coordinates_information_button_TTStext">Posición</string>
+    <string name="coordinates_state">Estado</string>
     <string name="key_configuration_menu_initial_TTStext">
 				Configuración de teclado. Mediante taps a su izquierda puede escuchar
 			    las descripciones de las acciones, a su derecha puede cambiar la tecla relacionada

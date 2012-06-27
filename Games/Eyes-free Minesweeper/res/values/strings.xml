@@ -240,6 +240,7 @@
     <string name="exploration_mode_TTStext">Exploration mode</string>
     <string name="zoom_mode_TTStext">Zoom mode</string>
     <string name="coordinates_information_button_TTStext">Position</string>
+    <string name="coordinates_state">State</string>
     <string name="key_configuration_menu_initial_TTStext">
 			  	Key Configuration. By tapping on your left you could listen the action descriptions
 			     and by tapping on your right you will change the key related 

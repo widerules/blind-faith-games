@@ -17,14 +17,14 @@
             <http://www.e-ucm.es>
     
     ****************************************************************************
-  	  This file is part of SHADOW OF THE PAST, developed in the Blind Faith Games project.
+  	  This file is part of THE SHADOW OF THE PAST, developed in the Blind Faith Games project.
    
-        SHADOW OF THE PAST is free software: you can redistribute it and/or modify
+        THE SHADOW OF THE PAST is free software: you can redistribute it and/or modify
         it under the terms of the GNU Lesser General Public License as published by
         the Free Software Foundation, either version 3 of the License, or
         (at your option) any later version.
     
-        SHADOW OF THE PAST is distributed in the hope that it will be useful,
+        THE SHADOW OF THE PAST is distributed in the hope that it will be useful,
         but WITHOUT ANY WARRANTY; without even the implied warranty of
         MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
         GNU Lesser General Public License for more details.
@@ -55,9 +55,9 @@
     <string name="blindMode_label">Interacción para ciegos</string>
     <string name="noBlindMode_label">Interacción estándar</string>
 
-    <string name="app_name">Sombra del Pasado</string>
+    <string name="app_name">La Sombra del Pasado</string>
     <string name="introMessage">Bienvenido, seleccione una dificultad.</string>
-    <string name="introMainMenu">Menú principal de Sombra del Pasado. Puede navegar por el menú mediante pulsaciones simples sobre las diferentes opciones,
+    <string name="introMainMenu">Menú principal de La Sombra del Pasado. Puede navegar por el menú mediante pulsaciones simples sobre las diferentes opciones,
      para seleccionar haga una pulsación larga sobre la opción que desee, en caso de haber seleccionado interacción para ciegos</string>
     <string name="buttonMessage">¡Adelante!</string>
     
@@ -65,9 +65,9 @@
     <!--           MENÚ		  			 -->
     <!-- =============================== -->    
         
-    <string name="sotp_activity">Sombra del Pasado</string>
+    <string name="sotp_activity">La Sombra del Pasado</string>
     <string name="exitButton">Salir</string>
-    <string name="main_title">Sombra del Pasado</string>
+    <string name="main_title">La Sombra del Pasado</string>
     <string name="continue_label">Continuar</string>
     <string name="new_game_label">Nuevo juego</string>
     <string name="tutorial_label">Consejos</string>
@@ -75,11 +75,11 @@
     <string name="about_label">Acerca de</string>
     <string name="form_label">Formulario</string>
     <string name="exit_label">Salir</string>
-    <string name="about_title">Acerca de Sombra del Pasado</string>
+    <string name="about_title">Acerca de La Sombra del Pasado</string>
     <string name="about_text">   
-		Sombra del Pasado, 2012. \n\n
+		La Sombra del Pasado, 2012. \n\n
 		
-		Sombra del Pasado es parte del proyecto de investigación Blind Faith Games (BFG), que trata de averiguar estrategias de diseño adecuadas para producir juegos de los que puedan disfrutarse en un dispositivo con Android&#8482;  
+		La Sombra del Pasado es parte del proyecto de investigación Blind Faith Games (BFG), que trata de averiguar estrategias de diseño adecuadas para producir juegos de los que puedan disfrutarse en un dispositivo con Android&#8482;  
 		independientemente de las capacidades de visión de la persona. Por favor, si tiene cinco minutos le agradeceríamos que rellenara el formulario de evaluación que encontrará a través del menú principal de la aplicación, esto nos ayudará a mejorarla.\n\n
 		
 		BFG es un proyecto del grupo e-UCM, y ha sido desarrollado por Gloria Pozuelo y Javier Álvarez.\n
@@ -93,7 +93,7 @@
 		<i>Android es una marca registrada de Google Inc.</i>                
 	</string>
     <string name="settings_label">Configuración</string>
-    <string name="settings_title">Configuración de Sombra del Pasado</string>
+    <string name="settings_title">Configuración de La Sombra del Pasado</string>
     <string name="settings_shortcut">s</string>
     <string name="main_category">Principal</string>
     <string name="profiles_category">Perfiles</string>

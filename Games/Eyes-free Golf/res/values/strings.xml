@@ -186,7 +186,7 @@
     <string name="new_game_dialog_title">Mode Selection</string>
     <string name="recordSpeech">your actual record is</string>
     <string name="counterSpeech">your actual count is</string>
-    <string name="newRecordSpeech">New record!</string>
+    <string name="newRecordSpeech">New record</string>
     <string name="EndingDialogTitle">Round completed</string>
     <string name="EndingPositiveButtonLabel">Ok</string>
     <string name="EndingPositiveButtonLabelSpeech">Press ok to back to the main menu</string>

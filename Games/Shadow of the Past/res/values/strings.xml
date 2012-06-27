@@ -17,14 +17,14 @@
             <http://www.e-ucm.es>
     
     ****************************************************************************
-  	  This file is part of SHADOW OF THE PAST, developed in the Blind Faith Games project.
+  	  This file is part of THE SHADOW OF THE PAST, developed in the Blind Faith Games project.
    
-        SHADOW OF THE PAST is free software: you can redistribute it and/or modify
+        THE SHADOW OF THE PAST is free software: you can redistribute it and/or modify
         it under the terms of the GNU Lesser General Public License as published by
         the Free Software Foundation, either version 3 of the License, or
         (at your option) any later version.
     
-        SHADOW OF THE PAST is distributed in the hope that it will be useful,
+        THE SHADOW OF THE PAST is distributed in the hope that it will be useful,
         but WITHOUT ANY WARRANTY; without even the implied warranty of
         MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
         GNU Lesser General Public License for more details.
@@ -54,19 +54,19 @@
     <string name="yes_label">Yes</string>
     <string name="no_label">No</string>    
     <string name="introMessage">Welcome, please select a difficulty</string>
-    <string name="introMainMenu">Main menu Shadow of the Past, you can navigate through the menu by making simple taps in the different options
+    <string name="introMainMenu">Main menu of The Shadow of the Past, you can navigate through the menu by making simple taps in the different options
     							 and just make a long press to select one of the options below</string>
     <string name="buttonMessage">Go!</string>
-    <string name="app_name">Shadow of the Past</string>
+    <string name="app_name">The Shadow of the Past</string>
     <string name="settingsInitialSpeech">Click any option</string>
     
     <!-- =============================== -->
     <!--           MENU 	  			 -->
     <!-- =============================== -->    
         
-    <string name="sotp_activity">Shadow of the Past</string>
+    <string name="sotp_activity">The Shadow of the Past</string>
     <string name="exitButton">Exit</string>
-    <string name="main_title">Shadow of the Past</string>
+    <string name="main_title">The Shadow of the Past</string>
     <string name="continue_label">Continue</string>
     <string name="new_game_label">New Game</string>
     <string name="tutorial_label">Game Tips</string>
@@ -74,11 +74,11 @@
     <string name="about_label">About</string>
     <string name="form_label">Form</string>
     <string name="exit_label">Exit</string>
-    <string name="about_title">Shadow of the Past About </string>
+    <string name="about_title">The Shadow of the Past About </string>
     <string name="about_text"> 
-        Shadow of the Past, 2012. \n\n
+        The Shadow of the Past, 2012. \n\n
 		
-		Shadow of the Past is part of Blind Faith Games (BFG), a research project about how to deliver eyes-free game experiences that are enjoyable on your Android&#8482; 
+		The Shadow of the Past is part of Blind Faith Games (BFG), a research project about how to deliver eyes-free game experiences that are enjoyable on your Android&#8482; 
 		device regardless of your sight capabilities. If you have some time to spare, please help us to improve the game by filling in the feedback form that can be reached from the main menu.\n\n
 		
 		
@@ -94,7 +94,7 @@
 
 	</string>
     <string name="settings_label">Settings</string>
-    <string name="settings_title">Shadow of the Past settings</string>
+    <string name="settings_title">The Shadow of the Past settings</string>
     <string name="settings_shortcut">s</string>
     <string name="main_category">Main</string>
     <string name="profiles_category">Profiles</string>

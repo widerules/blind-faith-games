@@ -657,7 +657,7 @@ public class MinesweeperView extends View {
 		    	}
 		    	else if (keyboard.getAction(keyCode).equals("coordinates")){
 		        	this.game.mTtsAction(Minesweeper.SPEECH_READ_CODE, this.game.getString(R.string.coordinates_information_button_TTStext) + " " 
-							+ selCol + " " + selRow + " State " 
+							+ selCol + " " + selRow + " " + this.game.getString(R.string.coordinates_state) + " " 
 						+ this.game.getCell(selRow, selCol).cellToString(this.getContext()));
 		    	}
 		    	else if (keyboard.getAction(keyCode).equals("instructions")){
